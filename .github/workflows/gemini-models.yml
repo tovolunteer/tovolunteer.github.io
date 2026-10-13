@@ -1,0 +1,12 @@
+name: gemini-models
+on: workflow_dispatch
+permissions: {contents: read}
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -s -H "x-goog-api-key: $GEMINI_API_KEY" "https://generativelanguage.googleapis.com/v1beta/models?pageSize=200" \
+            | jq -r '.models[]?.name, .error.status?' | grep -iE "flash|lite|ERROR|PERMISSION|INVALID" | sort
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
