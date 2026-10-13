@@ -2,11 +2,16 @@ name: gemini-models
 on: workflow_dispatch
 permissions: {contents: read}
 jobs:
-  list:
+  probe:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          curl -s -H "x-goog-api-key: $GEMINI_API_KEY" "https://generativelanguage.googleapis.com/v1beta/models?pageSize=200" \
-            | jq -r '.models[]?.name, .error.status?' | grep -iE "flash|lite|ERROR|PERMISSION|INVALID" | sort
+          for m in gemini-3.5-flash-lite gemini-flash-lite-latest; do
+            echo "== $m"
+            curl -s -o out.json -w "HTTP %{http_code}\n" -H "x-goog-api-key: $GEMINI_API_KEY" -H "Content-Type: application/json" \
+              "https://generativelanguage.googleapis.com/v1beta/models/$m:generateContent" \
+              -d '{"contents":[{"parts":[{"text":"Translate to Simplified Chinese, reply JSON {\"t\": string}: Community Tree Planting"}]}],"generationConfig":{"responseMimeType":"application/json"}}'
+            jq -c '{err: .error.message, status: .error.status, text: .candidates[0].content.parts[0].text}' out.json
+          done
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
