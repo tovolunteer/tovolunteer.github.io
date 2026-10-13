@@ -1,0 +1,73 @@
+{
+  "daily-bread-food-bank": {
+    "lat": 43.6064739,
+    "lng": -79.5040796,
+    "query": "191 New Toronto Street, Toronto, ON, M8V 2E7"
+  },
+  "feed-scarborough": {
+    "lat": 43.70356,
+    "lng": -79.25267,
+    "query": "2213 Kingston Rd, Toronto, ON, M1N 1T7"
+  },
+  "foodshare-toronto": {
+    "checked": "2026-10-13",
+    "lat": null,
+    "lng": null,
+    "query": "120 Industry Street, Unit C, Toronto, ON, M6M 4L8"
+  },
+  "fort-york-food-bank": {
+    "lat": 43.6571594,
+    "lng": -79.4050726,
+    "query": "380 College St, Toronto, ON, M5T 1S6"
+  },
+  "leaf:0d776f3f64dc0ab6": {
+    "lat": 44.014781,
+    "lng": -79.437185,
+    "query": "234 Mavrinac Blvd Aurora, ON L4G 0E6"
+  },
+  "leaf:762df20cdbea54c9": {
+    "lat": 44.0355368,
+    "lng": -79.4557067,
+    "query": "620 McBean Ave Newmarket, ON L3X 2L5"
+  },
+  "leaf:78c94c69fe9feb45": {
+    "lat": 43.9487315,
+    "lng": -78.8671207,
+    "query": "1091 Ormond Dr Oshawa, ON L1K 0E8"
+  },
+  "leaf:86c71d243460b419": {
+    "lat": 43.9144101,
+    "lng": -79.639783,
+    "query": "32 Bluff Trail Nobleton, ON L0G 1N0"
+  },
+  "north-york-harvest-food-bank": {
+    "lat": 43.6938385,
+    "lng": -79.4937089,
+    "query": "116 Industry Street, Toronto, ON, M6M 4L8"
+  },
+  "parkdale-community-food-bank": {
+    "lat": 43.6420043,
+    "lng": -79.432415,
+    "query": "5 Brock Avenue, Toronto, ON, M6K 2K6"
+  },
+  "second-harvest": {
+    "lat": 43.6205933,
+    "lng": -79.5496586,
+    "query": "120 The East Mall, Toronto, ON, M8Z 5V5"
+  },
+  "stop-community-food-centre": {
+    "lat": 43.6708617,
+    "lng": -79.4538219,
+    "query": "1884 Davenport Road, Toronto, ON, M6H 4E1"
+  },
+  "trca:423a632374c9a1a0": {
+    "lat": 43.7438527,
+    "lng": -79.4842149,
+    "query": "70 Canuck Avenue Toronto, ON M3M 2H3"
+  },
+  "trca:930694089154552d": {
+    "lat": 43.913623,
+    "lng": -79.4492778,
+    "query": "120 Tower Hill Rd Richmond Hill, ON L4E 0K9"
+  }
+}

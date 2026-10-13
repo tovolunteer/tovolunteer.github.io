@@ -1,0 +1,23 @@
+---
+import Layout from './Layout.astro';
+
+const { t } = Astro.props;
+---
+<Layout t={t} page="about" title={t.aboutTitle}>
+  <section class="hero">
+    <p class="eyebrow">{t.homeEyebrow}</p>
+    <h1>{t.aboutTitle}</h1>
+    <p class="lead">{t.intro}</p>
+  </section>
+  <section class="content-section about-grid">
+    <article class="card"><h2>{t.aboutSourcesTitle}</h2><p>{t.aboutSources}</p><p>{t.geoCredit}</p></article>
+    <article class="card"><h2>{t.officialTitle}</h2><p>{t.officialText}</p></article>
+    <article class="card"><h2>{t.hoursTitle}</h2><p>{t.hoursText}</p></article>
+  </section>
+</Layout>
+
+<style>
+  .about-grid { display: grid; gap: 18px; }
+  .about-grid h2 { font-size: 1.35rem; }
+  .about-grid p { line-height: 1.7; max-width: 780px; margin-bottom: 0; }
+</style>

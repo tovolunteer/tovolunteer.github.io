@@ -1,0 +1,163 @@
+{
+  "error": null,
+  "events": [
+    {
+      "category": "tree-planting",
+      "credit": "stated",
+      "end": "2026-10-17T15:00:00-04:00",
+      "evidence": [
+        {
+          "field": "signup_required",
+          "quote": "Registration Required"
+        },
+        {
+          "field": "signup_required",
+          "quote": "Registration Required"
+        },
+        {
+          "field": "credit",
+          "quote": "LEAF events count toward secondary school volunteer hour requirements"
+        }
+      ],
+      "id": "leaf:86c71d243460b419",
+      "location": "32 Bluff Trail Nobleton , ON L0G 1N0",
+      "min_age": null,
+      "org": "LEAF",
+      "signup_required": true,
+      "source": "leaf",
+      "start": "2026-10-17T13:00:00-04:00",
+      "summary": null,
+      "summary_zh": null,
+      "title": "Community Tree Planting in Bluff Trail (Nobleton)",
+      "title_zh": null,
+      "url": "https://www.yourleaf.org/event/oct-17-2026/community-tree-planting-bluff-trail-nobleton"
+    },
+    {
+      "category": "tree-planting",
+      "credit": "stated",
+      "end": "2026-10-18T15:00:00-04:00",
+      "evidence": [
+        {
+          "field": "signup_required",
+          "quote": "Registration Required"
+        },
+        {
+          "field": "signup_required",
+          "quote": "Registration Required"
+        },
+        {
+          "field": "credit",
+          "quote": "LEAF events count toward secondary school volunteer hour requirements"
+        }
+      ],
+      "id": "leaf:762df20cdbea54c9",
+      "location": "620 McBean Ave Newmarket , ON L3X 2L5",
+      "min_age": null,
+      "org": "LEAF",
+      "signup_required": true,
+      "source": "leaf",
+      "start": "2026-10-18T13:00:00-04:00",
+      "summary": null,
+      "summary_zh": null,
+      "title": "Community Tree Planting in Audrie Sanderson Park (Newmarket)",
+      "title_zh": null,
+      "url": "https://www.yourleaf.org/event/oct-18-2026/community-tree-planting-audrie-sanderson-park-newmarket"
+    },
+    {
+      "category": "tree-planting",
+      "credit": "stated",
+      "end": "2026-10-24T15:00:00-04:00",
+      "evidence": [
+        {
+          "field": "signup_required",
+          "quote": "Registration Required"
+        },
+        {
+          "field": "signup_required",
+          "quote": "Registration Required"
+        },
+        {
+          "field": "credit",
+          "quote": "LEAF events count toward secondary school volunteer hour requirements"
+        }
+      ],
+      "id": "leaf:32248bffb1e39c10",
+      "location": null,
+      "min_age": null,
+      "org": "LEAF",
+      "signup_required": true,
+      "source": "leaf",
+      "start": "2026-10-24T13:00:00-04:00",
+      "summary": null,
+      "summary_zh": null,
+      "title": "Community Tree Planting Event in Treasure Hill Park (Georgina)",
+      "title_zh": null,
+      "url": "https://www.yourleaf.org/event/oct-24-2026/community-tree-planting-event-treasure-hill-park-georgina"
+    },
+    {
+      "category": "tree-planting",
+      "credit": "stated",
+      "end": "2026-10-31T15:00:00-04:00",
+      "evidence": [
+        {
+          "field": "signup_required",
+          "quote": "Registration Required"
+        },
+        {
+          "field": "signup_required",
+          "quote": "Registration Required"
+        },
+        {
+          "field": "credit",
+          "quote": "LEAF events count toward secondary school volunteer hour requirements"
+        }
+      ],
+      "id": "leaf:0d776f3f64dc0ab6",
+      "location": "234 Mavrinac Blvd Aurora , ON L4G 0E6",
+      "min_age": null,
+      "org": "LEAF",
+      "signup_required": true,
+      "source": "leaf",
+      "start": "2026-10-31T13:00:00-04:00",
+      "summary": null,
+      "summary_zh": null,
+      "title": "Community Tree Planting in Thomas Coates Park (Aurora)",
+      "title_zh": null,
+      "url": "https://www.yourleaf.org/event/oct-31-2026/community-tree-planting-thomas-coates-park-aurora"
+    },
+    {
+      "category": "tree-planting",
+      "credit": "stated",
+      "end": "2026-11-01T15:00:00-05:00",
+      "evidence": [
+        {
+          "field": "signup_required",
+          "quote": "Registration Required"
+        },
+        {
+          "field": "signup_required",
+          "quote": "Registration Required"
+        },
+        {
+          "field": "credit",
+          "quote": "LEAF events count toward secondary school volunteer hour requirements"
+        }
+      ],
+      "id": "leaf:78c94c69fe9feb45",
+      "location": "1091 Ormond Dr Oshawa , ON L1K 0E8",
+      "min_age": null,
+      "org": "LEAF",
+      "signup_required": true,
+      "source": "leaf",
+      "start": "2026-11-01T13:00:00-05:00",
+      "summary": null,
+      "summary_zh": null,
+      "title": "Community Tree Planting in Conlin Meadows Park (Oshawa)",
+      "title_zh": null,
+      "url": "https://www.yourleaf.org/event/nov-01-2026/community-tree-planting-conlin-meadows-park-oshawa"
+    }
+  ],
+  "fetched_at": "2026-10-13T13:15:14.049990+00:00",
+  "source": "leaf",
+  "status": "ok"
+}

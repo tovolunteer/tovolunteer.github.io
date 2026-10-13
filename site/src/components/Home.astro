@@ -1,0 +1,160 @@
+---
+import Layout from './Layout.astro';
+import DistanceSort from './DistanceSort.astro';
+import { loadData } from '../lib/data.mjs';
+import { coordinatesOf, mapUrl } from '../lib/geo.mjs';
+
+const { t } = Astro.props;
+const { events, programs, sources, places, hasAutoEvents } = await loadData();
+const categories = Object.entries(t.categories);
+const monthOf = (iso) => {
+  const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Toronto', year: 'numeric', month: '2-digit' }).formatToParts(new Date(iso));
+  return `${parts.find((part) => part.type === 'year').value}-${parts.find((part) => part.type === 'month').value}`;
+};
+const months = [...new Set(events.map((event) => monthOf(event.start)))].sort();
+const fullDate = (iso) => new Intl.DateTimeFormat(t.locale, {
+  timeZone: 'America/Toronto', dateStyle: 'medium', timeStyle: 'short',
+}).format(new Date(iso));
+const shortTime = (iso) => new Intl.DateTimeFormat(t.locale, {
+  timeZone: 'America/Toronto', timeStyle: 'short',
+}).format(new Date(iso));
+const eventDate = (event) => event.end && monthOf(event.start) === monthOf(event.end) &&
+  new Date(event.start).toLocaleDateString('en-CA', { timeZone: 'America/Toronto' }) ===
+  new Date(event.end).toLocaleDateString('en-CA', { timeZone: 'America/Toronto' })
+  ? `${fullDate(event.start)} – ${shortTime(event.end)}`
+  : event.end ? `${fullDate(event.start)} – ${fullDate(event.end)}` : fullDate(event.start);
+const age = (value) => value == null ? t.ageUnknown : t.ageAtLeast.replace('{age}', String(value));
+const signup = (value) => value == null ? t.unknown : value ? t.required : t.notRequired;
+const category = (value) => t.categories[value] || t.categories.other;
+---
+<Layout t={t} page="home" title={t.home}>
+  <section class="hero">
+    <p class="eyebrow">{t.homeEyebrow}</p>
+    <h1>{t.tagline}</h1>
+    <p class="lead">{t.intro}</p>
+  </section>
+
+  {sources.some((source) => source.status === 'error') && <Fragment set:html="<!-- One or more automatic event sources have status=error. -->" />}
+  <div data-distance-scope>
+  {hasAutoEvents && <section class="content-section automatic-section" aria-labelledby="automatic-heading">
+    <div class="section-heading">
+      <h2 id="automatic-heading">{t.autoTitle}</h2>
+      <p>{t.autoIntro}</p>
+    </div>
+    <div class="filters" data-event-filters role="group" aria-label={t.filters}>
+      <label>{t.category}
+        <select name="category">
+          <option value="">{t.allTypes}</option>
+          {categories.map(([value, label]) => <option value={value}>{label}</option>)}
+        </select>
+      </label>
+      <label>{t.month}
+        <select name="month">
+          <option value="">{t.allMonths}</option>
+          {months.map((month) => <option value={month}>{month}</option>)}
+        </select>
+      </label>
+      <label class="checkbox-label"><input type="checkbox" name="credit" /> {t.creditOnly}</label>
+      <DistanceSort t={t} />
+    </div>
+    <div class="card-grid" data-event-grid data-distance-grid>
+      {events.map((event) => (
+        <article class="card" data-event-card data-distance-card data-lat={coordinatesOf(places[event.id])?.[0]} data-lng={coordinatesOf(places[event.id])?.[1]} data-category={event.category} data-month={monthOf(event.start)} data-credit={event.credit}>
+          <span class="tag">{category(event.category)}</span>
+          {coordinatesOf(places[event.id]) && <p class="distance" data-distance-value data-template={t.distance} hidden></p>}
+          <h3><a href={event.url} target="_blank" rel="noopener noreferrer">{t.lang === 'zh' ? event.title_zh || event.title : event.title}</a></h3>
+          <dl class="card-meta">
+            <div class="key"><dt>{t.date}</dt><dd>{eventDate(event)}</dd></div>
+            <div class="key"><dt>{t.location}</dt><dd>{mapUrl(event.location, places[event.id]) ? <a href={mapUrl(event.location, places[event.id])} target="_blank" rel="noopener noreferrer">{event.location}</a> : event.location || t.unknown}</dd></div>
+            <div><dt>{t.organization}</dt><dd>{event.org || t.unknown}</dd></div>
+            <div class="minor"><dt>{t.age}</dt><dd>{age(event.min_age)}</dd></div>
+            <div class="minor"><dt>{t.registration}</dt><dd>{signup(event.signup_required)}</dd></div>
+            <div class="minor"><dt>{t.credit}</dt><dd>{event.credit === 'stated' ? t.creditStated : t.creditNotStated}</dd></div>
+            <div class="minor"><dt>{t.source}</dt><dd>{event.source}</dd></div>
+            <div class="minor"><dt>{t.fetched}</dt><dd>{fullDate(event.fetched_at)}</dd></div>
+          </dl>
+          {(t.lang === 'zh' ? event.summary_zh || event.summary : event.summary) &&
+            <p class="muted">{t.lang === 'zh' ? event.summary_zh || event.summary : event.summary}</p>}
+          <div class="card-actions"><a href={event.url} target="_blank" rel="noopener noreferrer">{t.original} ↗</a></div>
+        </article>
+      ))}
+    </div>
+    <p class="empty" data-event-empty hidden={events.length > 0}>{t.noEvents}</p>
+  </section>}
+
+  <section class="content-section" aria-labelledby="manual-heading">
+    <div class="section-heading">
+      <h2 id="manual-heading">{t.manualTitle}</h2>
+      <p>{t.manualIntro}</p>
+    </div>
+    {!hasAutoEvents && programs.length > 0 && <DistanceSort t={t} />}
+    {programs.length ? <div class="card-grid" data-distance-grid>
+      {programs.map((program) => (
+        <article class="card" data-distance-card data-lat={coordinatesOf(places[program.id])?.[0]} data-lng={coordinatesOf(places[program.id])?.[1]}>
+          <span class="tag">{category(program.category)}</span>
+          {coordinatesOf(places[program.id]) && <p class="distance" data-distance-value data-template={t.distance} hidden></p>}
+          <h3><a href={program.url} target="_blank" rel="noopener noreferrer">{t.lang === 'zh' ? program.title_zh || program.title : program.title}</a></h3>
+          <dl class="card-meta">
+            <div><dt>{t.organization}</dt><dd>{program.org}</dd></div>
+            <div class="key"><dt>{t.area}</dt><dd>{mapUrl(program.area, places[program.id]) ? <a href={mapUrl(program.area, places[program.id])} target="_blank" rel="noopener noreferrer">{program.area}</a> : program.area || t.unknown}</dd></div>
+            <div class="key"><dt>{t.date}</dt><dd>{t.lang === 'zh' ? program.schedule_zh || program.schedule || t.unknown : program.schedule || t.unknown}</dd></div>
+            <div class="minor"><dt>{t.age}</dt><dd>{age(program.min_age)}</dd></div>
+            <div class="minor"><dt>{t.credit}</dt><dd>{program.credit === 'stated' ? t.creditStated : t.creditNotStated}</dd></div>
+            <div class="minor"><dt>{t.verified}</dt><dd>{program.last_verified}</dd></div>
+          </dl>
+          {(t.lang === 'zh' ? program.notes_zh || program.notes : program.notes) &&
+            <p class="muted">{t.lang === 'zh' ? program.notes_zh || program.notes : program.notes}</p>}
+          <div class="card-actions">
+            <a href={program.url} target="_blank" rel="noopener noreferrer">{t.programLink} ↗</a>
+            {program.signup_url && <a href={program.signup_url} target="_blank" rel="noopener noreferrer">{t.signUpLink} ↗</a>}
+          </div>
+        </article>
+      ))}
+    </div> : <p class="empty">{t.noPrograms}</p>}
+  </section>
+  </div>
+
+  <section class="content-section coming-soon" aria-labelledby="carpool-heading">
+    <h2 id="carpool-heading">{t.carpoolTitle}</h2>
+    <p>{t.carpoolText}</p>
+  </section>
+</Layout>
+
+<script>
+  const filters = document.querySelector<HTMLElement>('[data-event-filters]');
+  const cards = [...document.querySelectorAll<HTMLElement>('[data-event-card]')];
+  const empty = document.querySelector<HTMLElement>('[data-event-empty]');
+  filters?.addEventListener('change', () => {
+    const category = filters.querySelector<HTMLSelectElement>('[name="category"]')!;
+    const month = filters.querySelector<HTMLSelectElement>('[name="month"]')!;
+    const credit = filters.querySelector<HTMLInputElement>('[name="credit"]')!;
+    let visible = 0;
+    for (const card of cards) {
+      const show = (!category.value || category.value === card.dataset.category)
+        && (!month.value || month.value === card.dataset.month)
+        && (!credit.checked || card.dataset.credit === 'stated');
+      card.hidden = !show;
+      if (show) visible++;
+    }
+    if (empty) empty.hidden = visible > 0;
+  });
+</script>
+
+<style>
+  .filters { display: flex; align-items: end; flex-wrap: wrap; gap: 14px 18px; padding: 18px; margin: 0 0 18px; background: #e7f0e8; border-radius: 14px; }
+  .filters label { display: grid; gap: 6px; min-width: min(100%, 170px); font-size: .88rem; font-weight: 700; }
+  .filters select { max-width: 100%; padding: 9px 12px; border: 1px solid #9db6a5; border-radius: 8px; background: white; color: #19332b; font: inherit; }
+  .filters .checkbox-label { display: flex; align-items: center; gap: 8px; padding-bottom: 9px; }
+  .filters input[type="checkbox"] { accent-color: #147c5f; width: 17px; height: 17px; flex: none; }
+  .filters :global(.distance-form) { width: 100%; }
+  .automatic-section .section-heading { border-left: 4px solid #147c5f; padding-left: 16px; }
+  .distance { color: #14684f; font-size: .88rem; font-weight: 700; margin: 0 0 12px; }
+  .coming-soon { background: #e8efe5; border-radius: 18px; padding: 27px; margin-bottom: 30px; }
+  .coming-soon p { margin-bottom: 0; color: #53695e; }
+  [hidden] { display: none !important; }
+  @media (prefers-color-scheme: dark) {
+    .filters, .coming-soon { background: #234031; }
+    .coming-soon p { color: #b4cdbb; }
+    .distance { color: #90dfb2; }
+  }
+</style>

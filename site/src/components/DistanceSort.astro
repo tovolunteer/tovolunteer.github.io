@@ -1,0 +1,58 @@
+---
+const { t } = Astro.props;
+---
+<form class="distance-form" data-distance-form novalidate>
+  <label for={`postal-code-${t.lang}`}>{t.postalCode}
+    <input id={`postal-code-${t.lang}`} name="postalCode" type="text" inputmode="text" autocomplete="off" placeholder="M5V 2T6" aria-describedby={`postal-error-${t.lang}`} />
+  </label>
+  <button type="submit">{t.sortByDistance}</button>
+  <p id={`postal-error-${t.lang}`} class="distance-error" data-distance-error role="status" hidden>{t.postalCodeUnknown}</p>
+</form>
+
+<script>
+  import centroids from '../../../data/geo/fsa.json';
+  import { coordinatesOf, haversineKm, lookupFsa, sortByDistance } from '../lib/geo.mjs';
+
+  for (const scope of document.querySelectorAll<HTMLElement>('[data-distance-scope]')) {
+    const form = scope.querySelector<HTMLFormElement>('[data-distance-form]');
+    const grids = scope.querySelectorAll<HTMLElement>('[data-distance-grid]');
+    const error = scope.querySelector<HTMLElement>('[data-distance-error]');
+    if (!form || !grids.length || !error) continue;
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const input = form.elements.namedItem('postalCode') as HTMLInputElement;
+      const origin = lookupFsa(input.value, centroids);
+      error.hidden = Boolean(origin);
+      input.setAttribute('aria-invalid', String(!origin));
+      if (!origin) return;
+      const getCoordinates = (card: HTMLElement) => coordinatesOf({
+        lat: Number(card.dataset.lat), lng: Number(card.dataset.lng),
+      });
+      for (const grid of grids) {
+        const cards = [...grid.querySelectorAll<HTMLElement>('[data-distance-card]')];
+        for (const card of sortByDistance(cards, origin, getCoordinates)) {
+          const coordinates = getCoordinates(card);
+          const distance = card.querySelector<HTMLElement>('[data-distance-value]');
+          if (coordinates && distance) {
+            distance.textContent = distance.dataset.template?.replace('{distance}', haversineKm(origin, coordinates).toFixed(1)) || '';
+            distance.hidden = false;
+          }
+          grid.append(card);
+        }
+      }
+    });
+  }
+</script>
+
+<style>
+  .distance-form { display: flex; align-items: end; flex-wrap: wrap; gap: 10px 16px; }
+  .distance-form label { display: grid; gap: 6px; min-width: min(100%, 170px); font-size: .88rem; font-weight: 700; }
+  .distance-form input { width: 100%; padding: 9px 12px; border: 1px solid #9db6a5; border-radius: 8px; background: white; color: #19332b; font: inherit; }
+  .distance-form button { padding: 10px 14px; border: 0; border-radius: 8px; background: #147c5f; color: white; font: inherit; font-weight: 700; cursor: pointer; }
+  .distance-error { width: 100%; margin: 0; color: #933b25; font-size: .88rem; }
+  [hidden] { display: none !important; }
+  @media (prefers-color-scheme: dark) {
+    .distance-form button { background: #257e62; }
+    .distance-error { color: #ffc6ad; }
+  }
+</style>

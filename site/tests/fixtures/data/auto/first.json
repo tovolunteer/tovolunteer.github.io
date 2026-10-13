@@ -1,0 +1,9 @@
+{
+  "source": "first",
+  "status": "ok",
+  "fetched_at": "2026-10-13T10:00:00Z",
+  "events": [
+    {"id": "first:old", "start": "2026-10-12T10:00:00-04:00"},
+    {"id": "first:future", "start": "2026-10-18T10:00:00-04:00"}
+  ]
+}

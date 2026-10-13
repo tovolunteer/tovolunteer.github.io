@@ -1,0 +1,106 @@
+- id: daily-bread-food-bank
+  name: Daily Bread Food Bank
+  area: Etobicoke
+  address: 191 New Toronto Street, Toronto, ON, M8V 2E7
+  url: https://www.dailybread.ca
+  find_food_url: https://www.dailybread.ca/need-food/
+  volunteer_url: https://www.dailybread.ca/volunteer/
+  volunteer_min_age: 15
+  notes: Clients can register online or visit member food bank locations across the city using their online agency locator.
+  notes_zh: 服务对象可以在线注册，或通过其在线机构定位工具查找并前往遍布全市的成员食物银行。
+  last_verified: '2026-10-13'
+  sources:
+  - https://www.dailybread.ca/need-food/
+  - https://www.dailybread.ca/volunteer/
+- id: north-york-harvest-food-bank
+  name: North York Harvest Food Bank
+  area: North York
+  address: 116 Industry Street, Toronto, ON, M6M 4L8
+  url: https://northyorkharvest.com/
+  find_food_url: https://northyorkharvest.com/find-a-food-bank/
+  volunteer_url: https://northyorkharvest.com/volunteer/
+  volunteer_min_age: null
+  notes: Clients must contact the food bank by phone or email to make an appointment before visiting.
+  notes_zh: 前往之前，服务对象须通过电话或电子邮件联系食物银行进行预约。
+  last_verified: '2026-10-13'
+  sources:
+  - https://northyorkharvest.com/find-a-food-bank/
+  - https://northyorkharvest.com/volunteer/
+- id: second-harvest
+  name: Second Harvest
+  area: Etobicoke
+  address: 120 The East Mall, Toronto, ON, M8Z 5V5
+  url: https://secondharvest.ca
+  find_food_url: null
+  volunteer_url: null
+  volunteer_min_age: null
+  notes: Second Harvest does not distribute food directly to individuals on-site and directs individuals in need of food to 211.
+  notes_zh: Second Harvest 不在现场直接向个人发放食物，需要食物援助的个人会被转介至 211。
+  last_verified: '2026-10-13'
+  sources:
+  - https://secondharvest.ca
+- id: foodshare-toronto
+  name: FoodShare Toronto
+  area: York
+  address: 120 Industry Street, Unit C, Toronto, ON, M6M 4L8
+  url: https://foodshare.net
+  find_food_url: null
+  volunteer_url: null
+  volunteer_min_age: null
+  notes: FoodShare operates community-based food initiatives rather than a direct emergency food bank walk-in, directing individuals in need of emergency food to 211.
+  notes_zh: FoodShare 开展基于社区的食品倡议项目而非直接提供救济的食物银行，紧急食物求助者会被转介至 211。
+  last_verified: '2026-10-13'
+  sources:
+  - https://foodshare.net
+- id: parkdale-community-food-bank
+  name: Parkdale Community Food Bank
+  area: Parkdale
+  address: 5 Brock Avenue, Toronto, ON, M6K 2K6
+  url: https://www.pcfb.ca/volunteer
+  find_food_url: null
+  volunteer_url: https://www.pcfb.ca/volunteer
+  volunteer_min_age: null
+  notes: The food bank operates as a walk-in drop-in grocery program during open hours without requiring appointments or identification.
+  notes_zh: 食物银行在开放时间内以无需预约、无需出示身份证件的免约自选杂货形式运营。
+  last_verified: '2026-10-13'
+  sources:
+  - https://www.pcfb.ca/volunteer
+- id: stop-community-food-centre
+  name: Stop Community Food Centre (The Stop)
+  area: Davenport
+  address: 1884 Davenport Road, Toronto, ON, M6H 4E1
+  url: null
+  find_food_url: null
+  volunteer_url: null
+  volunteer_min_age: null
+  notes: Food bank services operate on a drop-in basis for eligible residents within its catchment boundaries following an initial in-person registration with identification.
+  notes_zh: 食物银行面向其服务划定区域内的符合条件居民，在首次携带身份证件完成现场登记后以免预约方式提供服务。
+  last_verified: '2026-10-13'
+  sources: []
+- id: fort-york-food-bank
+  name: Fort York Food Bank
+  area: Downtown West
+  address: 380 College St, Toronto, ON, M5T 1S6
+  url: https://fyfb.com
+  find_food_url: https://fyfb.com
+  volunteer_url: https://fyfb.com/volunteer/
+  volunteer_min_age: null
+  notes: Services operate on a drop-in basis with registration, though clients are encouraged to pre-register online via Link2Feed.
+  notes_zh: 服务以现场登记免约形式开放，但鼓励服务对象先通过 Link2Feed 进行在线预登记。
+  last_verified: '2026-10-13'
+  sources:
+  - https://fyfb.com
+  - https://fyfb.com/volunteer/
+- id: feed-scarborough
+  name: Feed Scarborough
+  area: Scarborough
+  address: 2213 Kingston Rd, Toronto, ON, M1N 1T7
+  url: https://feedscarborough.ca
+  find_food_url: https://feedscarborough.ca
+  volunteer_url: null
+  volunteer_min_age: null
+  notes: Physical food bank locations operate on a drop-in basis without an appointment, requiring identification for household members on the first visit.
+  notes_zh: 实体食物银行网点无需预约即可直接前往，首次访问须提供家庭成员的身份证件。
+  last_verified: '2026-10-13'
+  sources:
+  - https://feedscarborough.ca

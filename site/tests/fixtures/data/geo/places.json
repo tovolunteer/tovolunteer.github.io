@@ -1,0 +1,5 @@
+{
+  "first:future": {"lat": 43.66, "lng": -79.39, "query": "Toronto"},
+  "fixture-program": {"lat": 43.67, "lng": -79.4, "query": "Toronto"},
+  "fixture-bank": {"lat": 43.68, "lng": -79.41, "query": "Toronto"}
+}

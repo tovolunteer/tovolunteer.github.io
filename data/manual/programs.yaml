@@ -1,0 +1,174 @@
+- id: city-tree-planting
+  org: City of Toronto
+  title: Tree Planting & Stewardship events
+  title_zh: 市政府植树与自然管护活动
+  category: tree-planting
+  url: https://www.toronto.ca/community-people/get-involved/volunteer-with-the-city/tree-planting-stewardship/tree-planting-stewardship-events-calendar/
+  signup_url: https://www.toronto.ca/community-people/get-involved/volunteer-with-the-city/tree-planting-stewardship/
+  min_age: null
+  credit: not-stated
+  schedule: Spring to fall; see the official calendar for dates
+  schedule_zh: 春季到秋季；具体日期见官方日历
+  area: Citywide
+  notes: The official calendar cannot be read automatically; check it directly or join the mailing list.
+  notes_zh: 官方日历无法自动读取，请直接查看或订阅邮件通知。
+  last_verified: '2026-10-13'
+  sources:
+  - https://www.toronto.ca/community-people/get-involved/volunteer-with-the-city/tree-planting-stewardship/tree-planting-stewardship-events-calendar/
+- id: trca-volunteer-programs
+  org: Toronto and Region Conservation Authority (TRCA)
+  title: Conservation Youth Corps & Community Volunteer Programs
+  title_zh: 保护区青年团与社区志愿服务项目
+  category: environment
+  url: https://trca.ca/get-involved/volunteer/
+  signup_url: https://trca.ca/get-involved/volunteer/
+  min_age: 14
+  credit: stated
+  schedule: Summer week-long sessions and seasonal weekend projects
+  schedule_zh: 夏季为期一周的项目及季节性周末活动
+  area: Greater Toronto Area
+  notes: Offers environmental restoration, tree planting, trail maintenance, and citizen science volunteer opportunities across TRCA watershed regions.
+  notes_zh: 在多伦多及周边自然保护区集水区提供生态修复、植树、步道维护和公民科学等志愿服务机会。
+  last_verified: '2026-10-13'
+  sources:
+  - https://trca.ca/get-involved/volunteer/
+- id: leaf-volunteer-program
+  org: LEAF (Local Enhancement and Appreciation of Forests)
+  title: LEAF Volunteer Program
+  title_zh: LEAF 城市森林志愿项目
+  category: tree-planting
+  url: https://www.yourleaf.org/become-volunteer
+  signup_url: https://www.yourleaf.org/become-volunteer
+  min_age: null
+  credit: stated
+  schedule: Seasonal planting events and scheduled orientation sessions
+  schedule_zh: 季节性植树活动与定期志愿者培训说明会
+  area: Toronto, York Region, and Durham Region
+  notes: Community planting events are open to all; children under 16 must be accompanied by an adult. 18+ for ongoing volunteer roles.
+  notes_zh: 社区植树活动对所有人开放，16 岁以下须有成人陪同；长期志愿岗位须年满 18 岁。
+  last_verified: '2026-10-13'
+  sources:
+  - https://www.yourleaf.org/become-volunteer
+- id: evergreen-brick-works-volunteer
+  org: Evergreen
+  title: Evergreen Brick Works Volunteer Program
+  title_zh: Evergreen Brick Works 志愿服务项目
+  category: environment
+  url: https://www.evergreen.ca/take-action/volunteer/
+  signup_url: https://www.evergreen.ca/take-action/volunteer/
+  min_age: null
+  credit: not-stated
+  schedule: Flexible ongoing shifts and seasonal weekend events year-round
+  schedule_zh: 全年提供灵活的常规班次及季节性周末活动
+  area: Toronto (Evergreen Brick Works)
+  notes: Provides volunteer roles in ravine stewardship, community gardening, public markets, and seasonal community events at Evergreen Brick Works.
+  notes_zh: 在 Evergreen Brick Works 提供峡谷生态管护、社区园艺、公众集市以及季节性社区活动等志愿岗位。
+  last_verified: '2026-10-13'
+  sources:
+  - https://www.evergreen.ca/take-action/volunteer/
+- id: 10000-trees-for-the-rouge
+  org: 10,000 Trees for the Rouge
+  title: 10,000 Trees for the Rouge Volunteer Tree Planting
+  title_zh: 红河谷万树计划志愿植树项目
+  category: tree-planting
+  url: https://www.10000trees.com/
+  signup_url: https://www.10000trees.com/
+  min_age: null
+  credit: not-stated
+  schedule: Annual spring (April/May) and fall (September/October) planting days
+  schedule_zh: 每年春季（4-5月）与秋季（9-10月）的大型植树日
+  area: Rouge Valley and GTA (Toronto, Markham, Pickering, Richmond Hill, Stouffville)
+  notes: Mobilizes community volunteers to plant native trees and restore wildlife habitat corridors across the Rouge Valley watershed.
+  notes_zh: 组织社区志愿者在红河谷集水区种植本土树木并修复野生动物栖息地生态廊道。
+  last_verified: '2026-10-13'
+  sources:
+  - https://www.10000trees.com/
+- id: toronto-community-stewardship-program
+  org: City of Toronto
+  title: Community Stewardship Program
+  title_zh: 多伦多市社区生态管护计划
+  category: environment
+  url: https://www.toronto.ca/community-people/get-involved/volunteer-with-the-city/community-stewardship-program/
+  signup_url: https://www.toronto.ca/community-people/get-involved/volunteer-with-the-city/community-stewardship-program/
+  min_age: null
+  credit: not-stated
+  schedule: Weekly weekday evening or weekend sessions from April to September
+  schedule_zh: 4月至9月期间每周进行一次工作日傍晚或周末活动
+  area: Toronto (multiple city park naturalization sites)
+  notes: Engages volunteer teams in hands-on habitat restoration, invasive plant removal, and native planting across Toronto parklands.
+  notes_zh: 组织志愿者团队在多伦多各公园绿地开展栖息地修复、外来入侵物种清除和本土植物种植。
+  last_verified: '2026-10-13'
+  sources:
+  - https://www.toronto.ca/community-people/get-involved/volunteer-with-the-city/community-stewardship-program/
+- id: park-people-network
+  org: Park People
+  title: Join the Network
+  title_zh: 加入公园之友网络
+  category: environment
+  url: https://parkpeople.ca/join-the-network/
+  signup_url: https://parkpeople.ca/join-the-network/
+  min_age: null
+  credit: not-stated
+  schedule: null
+  schedule_zh: null
+  area: Toronto, ON / Canada-wide
+  notes: Connects, supports, and provides resources for grassroots community park groups and park advocates.
+  notes_zh: 连接、支持并为基层社区公园组织和公园倡导者提供资源。
+  last_verified: '2026-10-13'
+  sources:
+  - https://parkpeople.ca/join-the-network/
+  - https://parkpeople.ca/how-to-start-your-community-park-group/
+- id: volunteer-toronto
+  org: Volunteer Toronto
+  title: Volunteer Opportunity Database and Information Service
+  title_zh: 志愿服务岗位数据库与咨询服务
+  category: other
+  url: https://www.volunteertoronto.ca/
+  signup_url: https://www.volunteertoronto.ca/
+  min_age: null
+  credit: not-stated
+  schedule: Mon-Fri 9 am-5 pm
+  schedule_zh: 周一至周五 9:00 - 17:00
+  area: Greater Toronto Area
+  notes: Operates an online database and provides advisory services connecting individuals to non-profit volunteer opportunities across Toronto.
+  notes_zh: 运营在线数据库并提供咨询服务，帮助个人对接多伦多各非营利组织的志愿服务机会。
+  last_verified: '2026-10-13'
+  sources:
+  - https://211ontario.ca/service/81924552/volunteer-toronto-volunteer-toronto/
+- id: daily-bread-food-bank
+  org: Daily Bread Food Bank
+  title: Individual Volunteering
+  title_zh: 个人志愿服务
+  category: food-bank
+  url: https://www.dailybread.ca/get-involved/volunteer/individual-volunteering/
+  signup_url: https://dailybread.volunteerhub.com/vv2/lp/infosession
+  min_age: 15
+  credit: stated
+  schedule: 'Weekdays: 8:30am - 11:30am or 12:30pm - 3:30pm (sorting/kitchen); 9:00am - 12:00pm, 1:00pm - 4:00pm, 4:00pm - 5:30pm (picking); 8:30am - 4:30pm (admin); weekday and weekend shifts for food
+    bank; most shifts are 3 hours long'
+  schedule_zh: 工作日：8:30–11:30 或 12:30–15:30（食品分拣/厨房）；9:00–12:00、13:00–16:00、16:00–17:30（配货）；8:30–16:30（行政）；食品库提供工作日及周末班次；多数班次时长为3小时
+  area: 191 New Toronto Street, South Etobicoke, Toronto
+  notes: Some sorting shifts accept ages 15+; most roles are 18+. High school students can earn volunteer hours.
+  notes_zh: 部分分拣班次 15 岁以上可参加，多数岗位须 18 岁以上；高中生可以累计志愿时长。
+  last_verified: '2026-10-13'
+  sources:
+  - https://www.dailybread.ca/get-involved/volunteer/individual-volunteering/
+  - https://www.dailybread.ca/get-involved/volunteer/
+- id: second-harvest
+  org: Second Harvest
+  title: Volunteer Program
+  title_zh: 志愿服务项目
+  category: food-bank
+  url: https://www.secondharvest.ca/get-involved/volunteer
+  signup_url: https://www.secondharvest.ca/form/volunteer-form
+  min_age: null
+  credit: not-stated
+  schedule: Flexible for administrative and Community Champion roles (minimum 6-month commitment); 3-4 hours Mondays through Thursdays (Feeding Our Future); 3 hours Tuesdays through Thursdays (Food Sort
+    Team Leader); event shift times vary
+  schedule_zh: 行政和社区倡导者角色时间灵活（需承诺至少6个月）；未来营养计划为周一至周四每次3-4小时；食品分拣领队为周二至周四每次3小时；活动班次时间视具体活动而定
+  area: Toronto, ON
+  notes: Volunteers assist Second Harvest in rescuing surplus food and reducing food waste through warehouse support, food sorts, summer lunch prep, and community events.
+  notes_zh: 志愿者通过仓库支持、食品分拣、夏季午餐制作和社区活动，协助第二收获救援过剩食品并减少食物浪费。
+  last_verified: '2026-10-13'
+  sources:
+  - https://www.secondharvest.ca/get-involved/volunteer
