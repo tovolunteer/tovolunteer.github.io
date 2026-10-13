@@ -1,0 +1,72 @@
+{
+  "17e5b4f23ab051b05f047486737e55ba54520b21a41b34ef621b686836742ba5": "Downsview公园社区种植活动",
+  "2cb491d41d472205f54aae2f2c0e693a960a7da4b5b9fb0695f7ae92d246ba00": {
+    "credit": "stated",
+    "min_age": 14,
+    "quotes": {
+      "credit": "earn high school volunteers hours",
+      "min_age": "Be at least 14 years of age",
+      "signup_required": "To register for this event please visit the following URL"
+    },
+    "signup_required": true
+  },
+  "37d35de7bbb89375e6d477a99a6108082368227e74cb74a5f009018a4c4204e1": "青年环保队 | eBird 挑战与垃圾清理活动",
+  "4a74777d7f680de6f0088b8612e634fa22e0b810c2970bddce586708c155c096": "奥德丽·桑德森公园（纽马克特）社区植树活动",
+  "547cf7f8f74bb843dd3b4ebe04d535911e8426beb56757bd5817456c6a5345da": {
+    "credit": "stated",
+    "min_age": null,
+    "quotes": {
+      "credit": "LEAF events count toward secondary school volunteer hour requirements.",
+      "signup_required": "Registration Required"
+    },
+    "signup_required": true
+  },
+  "555f6521b1450ba8a30639fd3583174fd1e50d13d72d10bb149d2c1820096d05": "Bluff Trail 社区植树活动（Nobleton）",
+  "5c5a45ddfb27f7124cf9de43fe9d6519c32cea3fc2d2ed431ed62e24a7d83142": {
+    "credit": "stated",
+    "min_age": null,
+    "quotes": {
+      "credit": "LEAF events count toward secondary school volunteer hour requirements.",
+      "signup_required": "Registration Required"
+    },
+    "signup_required": true
+  },
+  "61bea8febfc7bbf15b2614af00fb264c74d553c2c0bc8ace1436f8637509ffc7": {
+    "credit": "not-stated",
+    "min_age": null,
+    "quotes": {
+      "signup_required": "To register for this event please visit the following URL:"
+    },
+    "signup_required": true
+  },
+  "922f67d87f00c8bd232bda25567ab5f6ab06efe78862415f3b02d749d087234f": "康林草甸公园（奥沙瓦）社区植树活动",
+  "a6c05747d73932cb08b985245084f60cd66db011d8a9ee3d0ae9e0ec6bdafa79": {
+    "credit": "stated",
+    "min_age": null,
+    "quotes": {
+      "credit": "LEAF events count toward secondary school volunteer hour requirements.",
+      "signup_required": "REGISTRATION REQUIRED"
+    },
+    "signup_required": true
+  },
+  "acacd71268d87d7056dc26f4a2fd07b7a9956d016c5c47443922d75c6ab54a97": {
+    "credit": "stated",
+    "min_age": null,
+    "quotes": {
+      "credit": "LEAF events count toward secondary school volunteer hour requirements.",
+      "signup_required": "REGISTRATION REQUIRED"
+    },
+    "signup_required": true
+  },
+  "aee3bb6ed1781a490679695897b196c949797f8157f609699189788ec614d29f": "托马斯·科茨公园（奥罗拉）社区植树活动",
+  "c8056bbacf931b66f86d79e10cdf7136e214536f4bbc991bed0eb819b5be19b4": {
+    "credit": "stated",
+    "min_age": null,
+    "quotes": {
+      "credit": "LEAF events count toward secondary school volunteer hour requirements.",
+      "signup_required": "REGISTRATION REQUIRED"
+    },
+    "signup_required": true
+  },
+  "e0b5e242f7faa74bf62b73047fed9c854aeb639b3b0b895f4fddeb1916fc6023": "珍宝山公园（乔治娜）社区植树活动"
+}

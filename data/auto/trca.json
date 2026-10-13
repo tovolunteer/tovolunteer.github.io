@@ -13,19 +13,23 @@
         {
           "field": "min_age",
           "quote": "at least 14 years of age"
+        },
+        {
+          "field": "signup_required",
+          "quote": "To register for this event please visit the following URL"
         }
       ],
       "id": "trca:930694089154552d",
       "location": "120 Tower Hill Rd Richmond Hill, ON L4E 0K9",
       "min_age": 14,
       "org": "Toronto and Region Conservation Authority",
-      "signup_required": null,
+      "signup_required": true,
       "source": "trca",
       "start": "2026-10-14T16:00:00-04:00",
       "summary": null,
       "summary_zh": null,
       "title": "Conservation Youth Corps | eBird Challenge & Litter Clean Up",
-      "title_zh": null,
+      "title_zh": "青年环保队 | eBird 挑战与垃圾清理活动",
       "url": "https://calendar.trca.ca/event/cyc-bird-walk-clean-up/"
     },
     {
@@ -36,19 +40,23 @@
         {
           "field": "min_age",
           "quote": "at least 7 "
+        },
+        {
+          "field": "signup_required",
+          "quote": "To register for this event please visit the following URL:"
         }
       ],
       "id": "trca:423a632374c9a1a0",
       "location": "70 Canuck Avenue Toronto, ON M3M 2H3",
       "min_age": 7,
       "org": "Toronto and Region Conservation Authority",
-      "signup_required": null,
+      "signup_required": true,
       "source": "trca",
       "start": "2026-10-18T13:00:00-04:00",
       "summary": null,
       "summary_zh": null,
       "title": "Downsview Park Community Planting",
-      "title_zh": null,
+      "title_zh": "Downsview公园社区种植活动",
       "url": "https://calendar.trca.ca/event/downsview-park-community-planting/"
     }
   ],
