@@ -82,6 +82,31 @@
   sources:
   - https://www.evergreen.ca/take-action/volunteer/
   open_months: year-round
+- id: tns
+  org: Toronto Nature Stewards
+  title: Weekly park stewardship sites
+  title_zh: 公园自然管护（每周固定站点）
+  category: environment
+  url: https://torontonaturestewards.org/get-involved/
+  signup_url: https://torontonaturestewards.org/get-involved/
+  min_age: null
+  credit: not-stated
+  schedule: April to October, weekly at each site
+  schedule_zh: 4–10 月，各站点每周一次
+  area: Citywide
+  notes: Schedules are sent by each site's lead steward after sign-up.
+  notes_zh: 报名后由各站点领队通知具体时间。
+  last_verified: '2026-10-13'
+  sources:
+  - https://torontonaturestewards.org/get-involved/
+  open_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 - id: 10000-trees-for-the-rouge
   org: 10,000 Trees for the Rouge
   title: 10,000 Trees for the Rouge Volunteer Tree Planting

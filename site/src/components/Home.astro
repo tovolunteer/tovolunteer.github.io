@@ -7,7 +7,7 @@ import { coordinatesOf, mapUrl } from '../lib/geo.mjs';
 import { seasonLabel, seasonStatus, torontoMonth } from '../lib/season.mjs';
 
 const { t } = Astro.props;
-const { events, programs, sources, places, hasAutoEvents } = await loadData();
+const { events, programs, sources, places, hasAutoEvents, directories } = await loadData();
 const currentMonth = torontoMonth(new Date());
 const programsWithSeason = programs.map((program) => ({ ...program, season: seasonStatus(program.open_months, currentMonth) }));
 const categories = Object.entries(t.categories);
@@ -117,6 +117,18 @@ const category = (value) => t.categories[value] || t.categories.other;
       ))}
     </div> : <p class="empty">{t.noPrograms}</p>}
   </section>
+  {directories.length > 0 && <section class="content-section" aria-labelledby="dir-heading">
+    <div class="section-heading"><h2 id="dir-heading">{t.dirTitle}</h2><p>{t.dirText}</p></div>
+    <ul class="dir-list">
+      {directories.map((d) => (
+        <li>
+          <a href={d.url} target="_blank" rel="noopener noreferrer">{d.name} ↗</a>
+          <span class="dir-what">{t.lang === 'zh' ? d.what_zh || d.what : d.what}</span>
+          <span class="dir-why">{t.lang === 'zh' ? d.why_zh || d.why : d.why}</span>
+        </li>
+      ))}
+    </ul>
+  </section>}
   </div>
 
   <section class="content-section coming-soon" aria-labelledby="carpool-heading">

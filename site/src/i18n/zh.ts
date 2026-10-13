@@ -61,6 +61,8 @@ export const zh = {
   carpoolTitle: '拼车 · Discord 群',
   carpoolText: '要去同一个活动、有空座或想搭车？到我们的 Discord 群里约。仅限 18 岁以上。本站不审核司机——请在公共场所见面，并把行程告诉信任的人。',
   carpoolJoin: '加入 Discord',
+  dirTitle: '更多查找渠道',
+  dirText: "这些网站无法自动收录，请直接访问。",
   suggest: '推荐一个活动',
   report: '报告错误',
   foodbanksTitle: '多伦多食物银行',

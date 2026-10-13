@@ -30,6 +30,7 @@ export async function loadData({ dataRoot = defaultDataRoot, now = new Date(), p
   }))).filter((event) => upcoming(event, now)).sort((a, b) =>
     Date.parse(a.start) - Date.parse(b.start) || a.id.localeCompare(b.id));
   const manual = path.join(dataRoot, 'manual');
+  const directories = await readFile(path.join(manual, 'directories.yaml'), 'utf8').then((text) => YAML.parse(text) || []).catch(() => []);
   const [programs, foodbanks] = await Promise.all([
     readFile(path.join(manual, 'programs.yaml'), 'utf8').then((text) => YAML.parse(text) || []),
     readFile(path.join(manual, 'foodbanks.yaml'), 'utf8').then((text) => YAML.parse(text) || []),
@@ -40,5 +41,5 @@ export async function loadData({ dataRoot = defaultDataRoot, now = new Date(), p
       if (error.code === 'ENOENT') return {};
       throw error;
     });
-  return { sources, events, programs, foodbanks, places, hasAutoEvents: events.length > 0 };
+  return { sources, events, programs, foodbanks, directories, places, hasAutoEvents: events.length > 0 };
 }

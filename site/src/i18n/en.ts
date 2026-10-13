@@ -61,6 +61,8 @@ export const en = {
   carpoolTitle: 'Carpool via Discord',
   carpoolText: 'Going to an event and have empty seats, or need a ride? Coordinate in our Discord group. Adults (18+) only. We do not verify drivers — meet in public places and share your trip with someone you trust.',
   carpoolJoin: 'Join the Discord',
+  dirTitle: 'More places to look',
+  dirText: "We can't pull these sites in automatically. Visit them directly.",
   suggest: 'Suggest an opportunity',
   report: 'Report a problem',
   foodbanksTitle: 'Food banks in Toronto',

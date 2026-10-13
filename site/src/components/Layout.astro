@@ -89,6 +89,12 @@ const suffix = page === 'home' ? '' : `${page}/`;
   .footer-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; }
   .button-link { display: inline-block; padding: 8px 14px; border-radius: 999px; background: #1f6b45; color: #fff; font-weight: 700; text-decoration: none; }
   .button-link.secondary { background: transparent; color: inherit; border: 1px solid currentColor; }
+  .dir-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+  .dir-list li { display: grid; grid-template-columns: minmax(180px, 30%) 1fr auto; gap: 4px 14px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid #d3e0d755; }
+  .dir-list a { font-weight: 700; }
+  .dir-what { font-size: .92rem; }
+  .dir-why { font-size: .78rem; opacity: .7; }
+  @media (max-width: 640px) { .dir-list li { grid-template-columns: 1fr; } }
   .site-footer { border-top: 1px solid #cbd9d0; padding: 24px 0 40px; color: #53695e; font-size: .88rem; }
   @media (max-width: 620px) { .site-header { align-items: flex-start; flex-direction: column; } nav { gap: 8px 14px; } }
   @media (prefers-color-scheme: dark) {
