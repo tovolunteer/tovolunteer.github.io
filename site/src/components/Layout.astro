@@ -46,7 +46,7 @@ const suffix = page === 'home' ? '' : `${page}/`;
   body { margin: 0; min-width: 0; }
   a { color: #166c54; text-underline-offset: .2em; }
   a:hover { text-decoration-thickness: 2px; }
-  .site-shell { max-width: 1180px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 48px); }
+  .site-shell { max-width: 1120px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
   .site-header { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 22px 0; border-bottom: 1px solid #cbd9d0; }
   .brand { display: inline-flex; align-items: center; gap: 9px; color: inherit; font-weight: 800; font-size: 1.15rem; text-decoration: none; line-height: 1.2; }
   .brand-mark { display: grid; place-items: center; flex: none; width: 34px; height: 34px; border-radius: 11px; background: #147c5f; color: white; font-size: 1.45rem; }
@@ -56,17 +56,17 @@ const suffix = page === 'home' ? '' : `${page}/`;
   .language-link { border: 1px solid #a2b8a9; border-radius: 999px; padding: 5px 12px; }
   main { padding-bottom: 36px; }
   h1, h2, h3, p { overflow-wrap: anywhere; }
-  h1 { font-size: clamp(2.1rem, 6vw, 4rem); line-height: 1.1; letter-spacing: -.04em; margin: 0 0 16px; }
-  h2 { font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.025em; margin: 0; }
+  h1 { font-size: clamp(1.9rem, 4vw, 2.5rem); line-height: 1.1; letter-spacing: -.04em; margin: 0 0 12px; }
+  h2 { font-size: 1.5rem; letter-spacing: -.025em; margin: 0; }
   h3 { font-size: 1.125rem; font-weight: 600; line-height: 1.5; margin: 0 0 14px; }
-  .hero { padding: clamp(44px, 7vw, 88px) 0 42px; }
-  .eyebrow { color: #14684f; text-transform: uppercase; font-size: .78rem; font-weight: 800; letter-spacing: .13em; margin: 0 0 13px; }
-  .lead { font-size: clamp(1.05rem, 2.5vw, 1.3rem); color: #4a6155; line-height: 1.55; max-width: 640px; margin: 0; }
+  .hero { padding: clamp(22px, 3.5vw, 44px) 0 21px; }
+  .eyebrow { color: #14684f; text-transform: uppercase; font-size: .72rem; font-weight: 800; letter-spacing: .13em; margin: 0 0 10px; }
+  .lead { font-size: 1rem; color: #4a6155; line-height: 1.55; max-width: 640px; margin: 0; }
   .content-section { padding: 34px 0 48px; border-top: 1px solid #cbd9d0; }
   .section-heading { margin-bottom: 22px; }
-  .section-heading p { color: #53695e; line-height: 1.55; max-width: 700px; margin: 10px 0 0; }
-  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 310px), 1fr)); gap: 16px; }
-  .card { min-width: 0; padding: 22px; border: 1px solid #d3e0d7; border-radius: 16px; background: #fff; box-shadow: 0 5px 18px #1c503009; }
+  .section-heading p { color: #53695e; font-size: .92rem; line-height: 1.55; max-width: 700px; margin: 10px 0 0; }
+  .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 310px), 1fr)); gap: 14px; }
+  .card { min-width: 0; padding: 18px; border: 1px solid #d3e0d7; border-radius: 16px; background: #fff; box-shadow: 0 5px 18px #1c503009; }
   .card h3 a { color: inherit; }
   .card p { line-height: 1.55; }
   .card-meta { display: grid; gap: 9px; margin: 0 0 16px; line-height: 1.5; }
@@ -80,6 +80,9 @@ const suffix = page === 'home' ? '' : `${page}/`;
   .card-meta .minor { gap: 4px 8px; }
   .card-actions { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 18px; font-weight: 700; }
   .tag { display: inline-block; border-radius: 999px; padding: 4px 10px; background: #e5f3e8; color: #155c43; font-size: .77rem; font-weight: 750; margin-bottom: 13px; }
+  .season-tag { display: inline-block; border-radius: 999px; padding: 4px 10px; margin: 0 6px 13px 0; font-size: .77rem; font-weight: 750; background: #e7ece8; color: #3f584b; }
+  .season-tag.open { background: #d9f2df; color: #17613c; }
+  .season-tag.seasonal { background: #edf0ee; color: #53675b; }
   .muted { color: #53695e; }
   .empty { border: 1px dashed #a7bbac; border-radius: 14px; padding: 24px; color: #53695e; }
   .notice { border-left: 4px solid #bd7840; background: #fff0da; color: #593b23; padding: 10px 14px; border-radius: 5px; margin-bottom: 18px; }
@@ -99,6 +102,9 @@ const suffix = page === 'home' ? '' : `${page}/`;
     .lead, .section-heading p, .muted, .card-meta dt, .card-meta .minor dd, .site-footer { color: #b4cdbb; }
     .card { background: #1b3328; border-color: #365447; box-shadow: none; }
     .tag { background: #28533d; color: #c2f0ce; }
+    .season-tag { background: #33483d; color: #d2e0d5; }
+    .season-tag.open { background: #24573c; color: #b8f0c9; }
+    .season-tag.seasonal { background: #344139; color: #c6d3ca; }
     .empty { color: #b4cdbb; border-color: #688b78; }
     .notice { background: #463823; color: #ffdda5; border-color: #d99853; }
   }

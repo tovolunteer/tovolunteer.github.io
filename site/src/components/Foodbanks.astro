@@ -3,9 +3,12 @@ import Layout from './Layout.astro';
 import DistanceSort from './DistanceSort.astro';
 import { loadData } from '../lib/data.mjs';
 import { coordinatesOf, mapUrl } from '../lib/geo.mjs';
+import { seasonLabel, seasonStatus, torontoMonth } from '../lib/season.mjs';
 
 const { t } = Astro.props;
 const { foodbanks, places } = await loadData();
+const currentMonth = torontoMonth(new Date());
+const foodbanksWithSeason = foodbanks.map((bank) => ({ ...bank, season: seasonStatus(bank.open_months, currentMonth) }));
 const age = (value) => value == null ? t.ageUnknown : t.ageAtLeast.replace('{age}', String(value));
 ---
 <Layout t={t} page="foodbanks" title={t.foodbanksTitle}>
@@ -22,8 +25,9 @@ const age = (value) => value == null ? t.ageUnknown : t.ageAtLeast.replace('{age
     {foodbanks.length ? <>
     <DistanceSort t={t} />
     <div class="card-grid" data-distance-grid>
-      {foodbanks.map((bank) => (
+      {foodbanksWithSeason.map((bank) => (
         <article class="card" data-distance-card data-lat={coordinatesOf(places[bank.id])?.[0]} data-lng={coordinatesOf(places[bank.id])?.[1]}>
+          {bank.season && <span class:list={['season-tag', bank.season.kind]}>{seasonLabel(bank.season, t)}</span>}
           {coordinatesOf(places[bank.id]) && <p class="distance" data-distance-value data-template={t.distance} hidden></p>}
           <h3><a href={bank.url} target="_blank" rel="noopener noreferrer">{bank.name}</a></h3>
           <dl class="card-meta">
@@ -46,7 +50,7 @@ const age = (value) => value == null ? t.ageUnknown : t.ageAtLeast.replace('{age
 </Layout>
 
 <style>
-  .content-section :global(.distance-form) { margin-bottom: 18px; padding: 18px; border-radius: 14px; background: #e7f0e8; }
+  .content-section :global(.distance-form) { margin-bottom: 18px; padding: 14px; border-radius: 14px; background: #e7f0e8; }
   .distance { color: #14684f; font-size: .88rem; font-weight: 700; margin: 0 0 12px; }
   .directory-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
   .directory-links a { display: inline-block; border-radius: 10px; background: #147c5f; color: white; text-decoration: none; font-weight: 750; padding: 12px 16px; }

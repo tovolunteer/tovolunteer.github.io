@@ -4,9 +4,12 @@ import Layout from './Layout.astro';
 import DistanceSort from './DistanceSort.astro';
 import { loadData } from '../lib/data.mjs';
 import { coordinatesOf, mapUrl } from '../lib/geo.mjs';
+import { seasonLabel, seasonStatus, torontoMonth } from '../lib/season.mjs';
 
 const { t } = Astro.props;
 const { events, programs, sources, places, hasAutoEvents } = await loadData();
+const currentMonth = torontoMonth(new Date());
+const programsWithSeason = programs.map((program) => ({ ...program, season: seasonStatus(program.open_months, currentMonth) }));
 const categories = Object.entries(t.categories);
 const monthOf = (iso) => {
   const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Toronto', year: 'numeric', month: '2-digit' }).formatToParts(new Date(iso));
@@ -55,8 +58,8 @@ const category = (value) => t.categories[value] || t.categories.other;
           {months.map((month) => <option value={month}>{month}</option>)}
         </select>
       </label>
-      <label class="checkbox-label"><input type="checkbox" name="credit" /> {t.creditOnly}</label>
       <DistanceSort t={t} />
+      <label class="checkbox-label"><input type="checkbox" name="credit" /> {t.creditOnly}</label>
     </div>
     <div class="card-grid" data-event-grid data-distance-grid>
       {events.map((event) => (
@@ -90,9 +93,10 @@ const category = (value) => t.categories[value] || t.categories.other;
     </div>
     {!hasAutoEvents && programs.length > 0 && <DistanceSort t={t} />}
     {programs.length ? <div class="card-grid" data-distance-grid>
-      {programs.map((program) => (
+      {programsWithSeason.map((program) => (
         <article class="card" data-distance-card data-lat={coordinatesOf(places[program.id])?.[0]} data-lng={coordinatesOf(places[program.id])?.[1]}>
           <span class="tag">{category(program.category)}</span>
+          {program.season && <span class:list={['season-tag', program.season.kind]}>{seasonLabel(program.season, t)}</span>}
           {coordinatesOf(places[program.id]) && <p class="distance" data-distance-value data-template={t.distance} hidden></p>}
           <h3><a href={program.url} target="_blank" rel="noopener noreferrer">{t.lang === 'zh' ? program.title_zh || program.title : program.title}</a></h3>
           <dl class="card-meta">
@@ -143,12 +147,12 @@ const category = (value) => t.categories[value] || t.categories.other;
 </script>
 
 <style>
-  .filters { display: flex; align-items: end; flex-wrap: wrap; gap: 14px 18px; padding: 18px; margin: 0 0 18px; background: #e7f0e8; border-radius: 14px; }
-  .filters label { display: grid; gap: 6px; min-width: min(100%, 170px); font-size: .88rem; font-weight: 700; }
-  .filters select { max-width: 100%; padding: 9px 12px; border: 1px solid #9db6a5; border-radius: 8px; background: white; color: #19332b; font: inherit; }
-  .filters .checkbox-label { display: flex; align-items: center; gap: 8px; padding-bottom: 9px; }
+  .filters { display: flex; align-items: end; flex-wrap: wrap; gap: 12px; padding: 14px; margin: 0 0 18px; background: #e7f0e8; border-radius: 14px; }
+  .filters > label { display: grid; flex: 0 1 140px; gap: 5px; min-width: 0; font-size: .78rem; font-weight: 700; }
+  .filters select { width: 100%; height: 38px; padding: 0 10px; border: 1px solid #9db6a5; border-radius: 8px; background: white; color: #19332b; font-size: .9rem; }
+  .filters > .checkbox-label { display: flex; flex: 1 1 220px; align-items: center; gap: 8px; min-height: 38px; }
   .filters input[type="checkbox"] { accent-color: #147c5f; width: 17px; height: 17px; flex: none; }
-  .filters :global(.distance-form) { width: 100%; }
+  .filters :global(.distance-form) { flex: 0 1 auto; min-width: 0; }
   .automatic-section .section-heading { border-left: 4px solid #147c5f; padding-left: 16px; }
   .distance { color: #14684f; font-size: .88rem; font-weight: 700; margin: 0 0 12px; }
   .coming-soon { background: #e8efe5; border-radius: 18px; padding: 27px; margin-bottom: 30px; }
