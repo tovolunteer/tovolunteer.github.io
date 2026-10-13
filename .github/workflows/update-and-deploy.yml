@@ -35,6 +35,11 @@ jobs:
           echo "rc=$?" >> "$GITHUB_OUTPUT"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      - name: Enrich and translate events
+        run: uv run python -m toronto_volunteer_hub.enrich
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - name: Geocode addresses
         run: uv run python -m toronto_volunteer_hub.geocode
         continue-on-error: true
@@ -43,6 +48,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/auto data/geo
+          if [ -d data/i18n ]; then git add data/i18n; fi
           git diff --cached --quiet || (git commit -m "data: auto update $(date -u +%FT%TZ)" && git push)
       - name: Open issue on source failure
         if: steps.run.outputs.rc == '2'
