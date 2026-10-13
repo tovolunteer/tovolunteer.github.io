@@ -1,0 +1,34 @@
+name: Check manual data
+
+on:
+  schedule:
+    - cron: '0 14 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install dependencies
+        run: uv sync -q
+      - name: Check manual data
+        id: check
+        continue-on-error: true
+        run: uv run python -m toronto_volunteer_hub.check_manual --out report.md
+      - name: Open maintenance issue
+        if: steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Manual data check $(date -u +%F)"
+          if gh issue list --state open --search "${title} in:title" --json title --jq '.[].title' | grep -Fxq "$title"; then
+            exit 0
+          fi
+          gh label create maintenance || true
+          gh issue create --title "$title" --body-file report.md --label maintenance
