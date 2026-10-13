@@ -15,6 +15,14 @@
   last_verified: '2026-10-13'
   sources:
   - https://www.toronto.ca/community-people/get-involved/volunteer-with-the-city/tree-planting-stewardship/tree-planting-stewardship-events-calendar/
+  open_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
 - id: trca-volunteer-programs
   org: Toronto and Region Conservation Authority (TRCA)
   title: Conservation Youth Corps & Community Volunteer Programs
@@ -32,6 +40,7 @@
   last_verified: '2026-10-13'
   sources:
   - https://trca.ca/get-involved/volunteer/
+  open_months: null
 - id: leaf-volunteer-program
   org: LEAF (Local Enhancement and Appreciation of Forests)
   title: LEAF Volunteer Program
@@ -49,6 +58,12 @@
   last_verified: '2026-10-13'
   sources:
   - https://www.yourleaf.org/become-volunteer
+  open_months:
+  - 4
+  - 5
+  - 6
+  - 9
+  - 10
 - id: evergreen-brick-works-volunteer
   org: Evergreen
   title: Evergreen Brick Works Volunteer Program
@@ -66,6 +81,7 @@
   last_verified: '2026-10-13'
   sources:
   - https://www.evergreen.ca/take-action/volunteer/
+  open_months: year-round
 - id: 10000-trees-for-the-rouge
   org: 10,000 Trees for the Rouge
   title: 10,000 Trees for the Rouge Volunteer Tree Planting
@@ -83,6 +99,11 @@
   last_verified: '2026-10-13'
   sources:
   - https://www.10000trees.com/
+  open_months:
+  - 4
+  - 5
+  - 9
+  - 10
 - id: toronto-community-stewardship-program
   org: City of Toronto
   title: Community Stewardship Program
@@ -100,6 +121,13 @@
   last_verified: '2026-10-13'
   sources:
   - https://www.toronto.ca/community-people/get-involved/volunteer-with-the-city/community-stewardship-program/
+  open_months:
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
 - id: park-people-network
   org: Park People
   title: Join the Network
@@ -118,6 +146,7 @@
   sources:
   - https://parkpeople.ca/join-the-network/
   - https://parkpeople.ca/how-to-start-your-community-park-group/
+  open_months: null
 - id: volunteer-toronto
   org: Volunteer Toronto
   title: Volunteer Opportunity Database and Information Service
@@ -135,6 +164,7 @@
   last_verified: '2026-10-13'
   sources:
   - https://211ontario.ca/service/81924552/volunteer-toronto-volunteer-toronto/
+  open_months: year-round
 - id: daily-bread-food-bank
   org: Daily Bread Food Bank
   title: Individual Volunteering
@@ -154,6 +184,7 @@
   sources:
   - https://www.dailybread.ca/get-involved/volunteer/individual-volunteering/
   - https://www.dailybread.ca/get-involved/volunteer/
+  open_months: year-round
 - id: second-harvest
   org: Second Harvest
   title: Volunteer Program
@@ -172,3 +203,4 @@
   last_verified: '2026-10-13'
   sources:
   - https://www.secondharvest.ca/get-involved/volunteer
+  open_months: year-round

@@ -12,6 +12,7 @@
   sources:
   - https://www.dailybread.ca/need-food/
   - https://www.dailybread.ca/volunteer/
+  open_months: year-round
 - id: north-york-harvest-food-bank
   name: North York Harvest Food Bank
   area: North York
@@ -26,6 +27,7 @@
   sources:
   - https://northyorkharvest.com/find-a-food-bank/
   - https://northyorkharvest.com/volunteer/
+  open_months: year-round
 - id: second-harvest
   name: Second Harvest
   area: Etobicoke
@@ -39,6 +41,7 @@
   last_verified: '2026-10-13'
   sources:
   - https://secondharvest.ca
+  open_months: year-round
 - id: foodshare-toronto
   name: FoodShare Toronto
   area: York
@@ -52,6 +55,7 @@
   last_verified: '2026-10-13'
   sources:
   - https://foodshare.net
+  open_months: year-round
 - id: parkdale-community-food-bank
   name: Parkdale Community Food Bank
   area: Parkdale
@@ -65,6 +69,7 @@
   last_verified: '2026-10-13'
   sources:
   - https://www.pcfb.ca/volunteer
+  open_months: year-round
 - id: stop-community-food-centre
   name: Stop Community Food Centre (The Stop)
   area: Davenport
@@ -77,6 +82,7 @@
   notes_zh: 食物银行面向其服务划定区域内的符合条件居民，在首次携带身份证件完成现场登记后以免预约方式提供服务。
   last_verified: '2026-10-13'
   sources: []
+  open_months: year-round
 - id: fort-york-food-bank
   name: Fort York Food Bank
   area: Downtown West
@@ -91,6 +97,7 @@
   sources:
   - https://fyfb.com
   - https://fyfb.com/volunteer/
+  open_months: year-round
 - id: feed-scarborough
   name: Feed Scarborough
   area: Scarborough
@@ -104,3 +111,4 @@
   last_verified: '2026-10-13'
   sources:
   - https://feedscarborough.ca
+  open_months: year-round

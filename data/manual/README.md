@@ -5,3 +5,5 @@
 
 programs 字段：id, org, title, title_zh, category(tree-planting|environment|food-bank|other), url, signup_url, min_age(int|null), credit(stated|not-stated), schedule, schedule_zh, area, notes, notes_zh, last_verified, sources[]
 foodbanks 字段：id, name, area, address, url, find_food_url, volunteer_url, volunteer_min_age(int|null), notes, notes_zh, last_verified, sources[]
+
+新字段 `open_months`：`year-round`（全年）、月份列表如 `[4, 5, 9, 10]`（季节性）、`null`（不确定，不显示标签）。
