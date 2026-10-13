@@ -119,15 +119,21 @@ const category = (value) => t.categories[value] || t.categories.other;
   </section>
   {directories.length > 0 && <section class="content-section" aria-labelledby="dir-heading">
     <div class="section-heading"><h2 id="dir-heading">{t.dirTitle}</h2><p>{t.dirText}</p></div>
-    <ul class="dir-list">
-      {directories.map((d) => (
-        <li>
-          <a href={d.url} target="_blank" rel="noopener noreferrer">{d.name} ↗</a>
-          <span class="dir-what">{t.lang === 'zh' ? d.what_zh || d.what : d.what}</span>
-          <span class="dir-why">{t.lang === 'zh' ? d.why_zh || d.why : d.why}</span>
-        </li>
-      ))}
-    </ul>
+    {[directories.filter((d) => d.group !== 'general'), directories.filter((d) => d.group === 'general')].map((list, i) => list.length > 0 && (
+      <div>
+        {i === 1 && <h3 class="dir-subhead">{t.dirMoreTitle}</h3>}
+        {i === 1 && <p class="muted">{t.dirMoreText}</p>}
+        <ul class="dir-list">
+          {list.map((d) => (
+            <li>
+              <a href={d.url} target="_blank" rel="noopener noreferrer">{d.name} ↗</a>
+              <span class="dir-what">{t.lang === 'zh' ? d.what_zh || d.what : d.what}</span>
+              {(d.types || d.types_zh) && <span class="dir-types">{t.dirTypes}: {t.lang === 'zh' ? d.types_zh || d.types : d.types}</span>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
   </section>}
   </div>
 

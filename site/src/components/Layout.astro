@@ -30,8 +30,8 @@ const suffix = page === 'home' ? '' : `${page}/`;
       <main><slot /></main>
       <footer class="site-footer">
         <div class="footer-actions">
-          <a class="button-link" href="https://github.com/tovolunteer/tovolunteer.github.io/issues/new?template=suggest.yml" target="_blank" rel="noopener noreferrer">{t.suggest}</a>
-          <a class="button-link secondary" href="https://github.com/tovolunteer/tovolunteer.github.io/issues/new?template=report.yml" target="_blank" rel="noopener noreferrer">{t.report}</a>
+          <a class="button-link" href="https://forms.gle/yZb7DKi738pddq2TA" target="_blank" rel="noopener noreferrer">{t.suggest}</a>
+          <a class="button-link secondary" href="https://docs.google.com/forms/d/e/1FAIpQLSdLaNO3c7fHfeCD8C29ZKxT5Berbx6g0HisKFY6xK9YeEmDsw/viewform" target="_blank" rel="noopener noreferrer">{t.report}</a>
         </div>
         <p>{t.footer}</p>
       </footer>
@@ -90,11 +90,12 @@ const suffix = page === 'home' ? '' : `${page}/`;
   .button-link { display: inline-block; padding: 8px 14px; border-radius: 999px; background: #1f6b45; color: #fff; font-weight: 700; text-decoration: none; }
   .button-link.secondary { background: transparent; color: inherit; border: 1px solid currentColor; }
   .dir-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
-  .dir-list li { display: grid; grid-template-columns: minmax(180px, 30%) 1fr auto; gap: 4px 14px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid #d3e0d755; }
+  .dir-list li { display: grid; grid-template-columns: minmax(180px, 30%) 1fr; gap: 4px 14px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid #d3e0d755; }
   .dir-list a { font-weight: 700; }
   .dir-what { font-size: .92rem; }
-  .dir-why { font-size: .78rem; opacity: .7; }
-  @media (max-width: 640px) { .dir-list li { grid-template-columns: 1fr; } }
+  .dir-types { font-size: .78rem; opacity: .75; grid-column: 2 / -1; }
+  .dir-subhead { font-size: 1.05rem; margin: 22px 0 2px; }
+  @media (max-width: 640px) { .dir-list li { grid-template-columns: 1fr; } .dir-types { grid-column: auto; } }
   .site-footer { border-top: 1px solid #cbd9d0; padding: 24px 0 40px; color: #53695e; font-size: .88rem; }
   @media (max-width: 620px) { .site-header { align-items: flex-start; flex-direction: column; } nav { gap: 8px 14px; } }
   @media (prefers-color-scheme: dark) {

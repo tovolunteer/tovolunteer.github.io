@@ -1,67 +1,69 @@
-# 不能自动抓取、需要自己去看的网站（条款禁止抓取 / 需要登录 / 有验证码 / 只通过邮件通知）
+# 更多查找渠道：机构 / 平台介绍 + 常见志愿类型。group: general = 综合社交活动平台，放在最后「自己再找找」
 - name: Volunteer Toronto
   url: https://www.volunteertoronto.ca/
-  what: Toronto's largest volunteer job board — hundreds of roles across the city.
-  what_zh: 多伦多最大的志愿岗位平台，全市数百个岗位。
-  why: Blocks automated access.
-  why_zh: 网站禁止自动抓取。
-- name: City of Toronto — Tree Planting & Stewardship calendar
+  what: Toronto's volunteer centre and largest volunteer job board, with roles posted by hundreds of non-profits.
+  what_zh: 多伦多志愿者中心，也是最大的志愿岗位平台，数百家非营利机构在这里招人。
+  types: Event help, tutoring, newcomer support, seniors programs, admin
+  types_zh: 活动协助、辅导、新移民支持、长者服务、行政
+- name: City of Toronto — Tree Planting & Stewardship
   url: https://www.toronto.ca/community-people/get-involved/volunteer-with-the-city/tree-planting-stewardship/tree-planting-stewardship-events-calendar/
-  what: Free drop-in tree planting events in city parks, spring to fall.
-  what_zh: 市政府公园里的植树活动，春季到秋季。
-  why: Calendar is protected by a captcha.
-  why_zh: 日历有验证码保护。
-- name: Eventbrite — Toronto volunteer events
-  url: https://www.eventbrite.ca/d/canada--toronto/volunteer/
-  what: Many groups (TRCA, LEAF, clean-ups) post sign-ups here.
-  what_zh: 很多机构（TRCA、LEAF、清洁活动等）在这里开放报名。
-  why: Terms of service prohibit scraping.
-  why_zh: 服务条款禁止抓取。
-- name: Meetup — volunteer groups in Toronto
-  url: https://www.meetup.com/find/?keywords=volunteer&location=ca--on--Toronto
-  what: Community groups that meet regularly to volunteer.
-  what_zh: 定期组织志愿活动的社区小组。
-  why: Terms of service prohibit scraping.
-  why_zh: 服务条款禁止抓取。
+  what: The City's calendar of community planting and stewardship events in parks and ravines.
+  what_zh: 市政府在公园和山谷举办的社区植树、自然管护活动日历。
+  types: Tree planting, invasive plant removal, park clean-ups
+  types_zh: 植树、清除入侵植物、公园清洁
 - name: Evergreen Brick Works
   url: https://www.evergreen.ca/take-action/volunteer/
-  what: Ravine stewardship, gardens and events; shifts booked online.
-  what_zh: 山谷自然管护、花园和活动；在线预约班次。
-  why: Shift schedule requires login.
-  why_zh: 班次表需要登录才能看。
+  what: Non-profit at the Don Valley Brick Works running gardens, markets and nature programs.
+  what_zh: 位于 Don Valley 砖厂的非营利机构，运营花园、农夫市集和自然项目。
+  types: Gardening, ravine restoration, event and market support
+  types_zh: 园艺、山谷修复、活动和市集协助
 - name: Toronto Nature Stewards
   url: https://torontonaturestewards.org/get-involved/
-  what: Weekly stewardship at parks across the city.
-  what_zh: 全市各公园每周的自然管护。
-  why: Schedules are shared by email after sign-up.
-  why_zh: 报名后才通过邮件发时间表。
+  what: Volunteer-led teams caring for natural areas in parks across Toronto.
+  what_zh: 由志愿者带领的团队，照顾多伦多各公园里的自然区域。
+  types: Weekly habitat restoration, native planting, invasive species removal
+  types_zh: 每周栖息地修复、种植本地植物、清除入侵物种
 - name: 10,000 Trees for the Rouge
   url: https://www.10000trees.com/
-  what: Big community tree planting days in Rouge National Urban Park.
-  what_zh: 胭脂河国家城市公园的大型社区植树日。
-  why: Announced a few times a year; check the site.
-  why_zh: 一年只公布几次，请直接看网站。
-- name: Toronto Public Library — volunteering
+  what: Community group organizing large planting days in Rouge National Urban Park.
+  what_zh: 在胭脂河国家城市公园组织大型植树日的社区团体。
+  types: Large-scale tree planting (spring and fall)
+  types_zh: 大型植树（春季、秋季）
+- name: Toronto Public Library — Volunteering
   url: https://www.torontopubliclibrary.ca/support-us/volunteering/
-  what: Library programs including youth volunteer roles.
-  what_zh: 图书馆志愿项目，包括青少年岗位。
-  why: No public feed.
-  why_zh: 没有公开数据源。
+  what: Volunteer programs at library branches across the city.
+  what_zh: 全市各图书馆分馆的志愿项目。
+  types: Reading buddies, homework help, ESL conversation circles, youth roles
+  types_zh: 阅读伙伴、作业辅导、英语会话小组、青少年岗位
 - name: Ontario Volunteer Centre Network
   url: https://ovcn.ca/
-  what: Find the volunteer centre for your city across Ontario.
-  what_zh: 查找安省各城市的志愿者中心。
-  why: Directory only.
-  why_zh: 只是目录。
+  what: Network of local volunteer centres across Ontario — find the one for your city.
+  what_zh: 安省各地志愿者中心的网络，可以找到你所在城市的中心。
+  types: All types, by city
+  types_zh: 各类岗位，按城市查找
 - name: 211 Central
   url: https://211central.ca/
-  what: Search community services, including food banks and meal programs.
-  what_zh: 查询社区服务，包括食物银行和免费餐。
-  why: Data requires a licence.
-  why_zh: 数据需要授权。
+  what: Directory of community and social services in the GTA.
+  what_zh: 大多伦多地区社区和社会服务目录。
+  types: Food banks, meal programs, community agencies that take volunteers
+  types_zh: 食物银行、免费餐项目、招收志愿者的社区机构
 - name: Toronto Drop-In Network
   url: https://tdin.ca/
-  what: Drop-in centres with free meals and services.
-  what_zh: 提供免费餐和服务的日间中心。
-  why: No public feed.
-  why_zh: 没有公开数据源。
+  what: Network of drop-in centres offering meals and support to people in need.
+  what_zh: 为有需要的人提供餐食和支援的日间中心网络。
+  types: Meal service, kitchen help, outreach
+  types_zh: 供餐、厨房帮手、外展服务
+- name: Eventbrite — Toronto volunteer events
+  group: general
+  url: https://www.eventbrite.ca/d/canada--toronto/volunteer/
+  what: Event platform; search "volunteer" for one-off sign-ups posted by many groups.
+  what_zh: 活动平台；搜索 "volunteer" 能找到各团体发布的单次志愿活动。
+  types: Clean-ups, planting days, charity events
+  types_zh: 清洁活动、植树日、慈善活动
+- name: Meetup — volunteer groups in Toronto
+  group: general
+  url: https://www.meetup.com/find/?keywords=volunteer&location=ca--on--Toronto
+  what: Social groups that meet regularly; some focus on volunteering together.
+  what_zh: 定期聚会的兴趣小组，其中一些专门一起做志愿者。
+  types: Group volunteering, social clean-ups
+  types_zh: 结伴志愿、社交型清洁活动
