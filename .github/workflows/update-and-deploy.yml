@@ -38,8 +38,10 @@ jobs:
       - name: Enrich and translate events
         run: uv run python -m toronto_volunteer_hub.enrich
         continue-on-error: true
+        timeout-minutes: 8
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
       - name: Geocode addresses
         run: uv run python -m toronto_volunteer_hub.geocode
         continue-on-error: true
