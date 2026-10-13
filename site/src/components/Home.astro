@@ -1,4 +1,5 @@
 ---
+const DISCORD_URL = import.meta.env.PUBLIC_DISCORD_URL || '';
 import Layout from './Layout.astro';
 import DistanceSort from './DistanceSort.astro';
 import { loadData } from '../lib/data.mjs';
@@ -117,6 +118,7 @@ const category = (value) => t.categories[value] || t.categories.other;
   <section class="content-section coming-soon" aria-labelledby="carpool-heading">
     <h2 id="carpool-heading">{t.carpoolTitle}</h2>
     <p>{t.carpoolText}</p>
+    {DISCORD_URL && <p><a class="button-link" href={DISCORD_URL} target="_blank" rel="noopener noreferrer">{t.carpoolJoin}</a></p>}
   </section>
 </Layout>
 

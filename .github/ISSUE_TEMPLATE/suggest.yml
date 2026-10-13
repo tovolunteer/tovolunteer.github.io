@@ -1,0 +1,22 @@
+name: Suggest an opportunity / 推荐一个活动
+description: Tell us about a volunteer program, event or food bank we should list.
+title: "[Suggest] "
+labels: [suggestion]
+body:
+  - type: input
+    id: name
+    attributes: {label: "Organization / program name · 机构或项目名称"}
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes: {label: "Official link · 官方链接", description: "Page where people sign up or read details."}
+    validations: {required: true}
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Type · 类型"
+      options: ["Tree planting / 植树", "Environment / 环保", "Food bank / 食物银行", "Other / 其他"]
+    validations: {required: true}
+  - type: textarea
+    id: details
+    attributes: {label: "Details (age, schedule, hours letter…) · 补充信息", description: "Only what the official page says. Please do not include personal phone numbers or emails."}

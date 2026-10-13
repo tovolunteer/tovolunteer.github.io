@@ -70,6 +70,8 @@ jobs:
           node-version: 20
       - run: npm ci && npm run build
         working-directory: site
+        env:
+          PUBLIC_DISCORD_URL: ${{ vars.DISCORD_URL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site/dist

@@ -1,0 +1,13 @@
+name: Report a problem / 报告错误
+description: Wrong date, broken link, outdated info.
+title: "[Fix] "
+labels: [correction]
+body:
+  - type: input
+    id: page
+    attributes: {label: "Which listing? · 哪一条", description: "Title or link on our site."}
+    validations: {required: true}
+  - type: textarea
+    id: problem
+    attributes: {label: "What's wrong · 哪里不对", description: "Include the official link that shows the correct info if you have it."}
+    validations: {required: true}
