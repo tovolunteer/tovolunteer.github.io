@@ -59,15 +59,5 @@
     "lat": 43.6708617,
     "lng": -79.4538219,
     "query": "1884 Davenport Road, Toronto, ON, M6H 4E1"
-  },
-  "trca:423a632374c9a1a0": {
-    "lat": 43.7438527,
-    "lng": -79.4842149,
-    "query": "70 Canuck Avenue Toronto, ON M3M 2H3"
-  },
-  "trca:930694089154552d": {
-    "lat": 43.913623,
-    "lng": -79.4492778,
-    "query": "120 Tower Hill Rd Richmond Hill, ON L4E 0K9"
   }
 }
