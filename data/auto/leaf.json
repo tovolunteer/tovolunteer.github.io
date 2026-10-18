@@ -4,37 +4,6 @@
     {
       "category": "tree-planting",
       "credit": "stated",
-      "end": "2026-10-17T15:00:00-04:00",
-      "evidence": [
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "credit",
-          "quote": "LEAF events count toward secondary school volunteer hour requirements"
-        }
-      ],
-      "id": "leaf:86c71d243460b419",
-      "location": "32 Bluff Trail Nobleton , ON L0G 1N0",
-      "min_age": null,
-      "org": "LEAF",
-      "signup_required": true,
-      "source": "leaf",
-      "start": "2026-10-17T13:00:00-04:00",
-      "summary": null,
-      "summary_zh": null,
-      "title": "Community Tree Planting in Bluff Trail (Nobleton)",
-      "title_zh": "Bluff Trail 社区植树活动（Nobleton）",
-      "url": "https://www.yourleaf.org/event/oct-17-2026/community-tree-planting-bluff-trail-nobleton"
-    },
-    {
-      "category": "tree-planting",
-      "credit": "stated",
       "end": "2026-10-18T15:00:00-04:00",
       "evidence": [
         {
@@ -157,7 +126,7 @@
       "url": "https://www.yourleaf.org/event/nov-01-2026/community-tree-planting-conlin-meadows-park-oshawa"
     }
   ],
-  "fetched_at": "2026-10-17T23:38:33.904865+00:00",
+  "fetched_at": "2026-10-18T13:40:53.282236+00:00",
   "source": "leaf",
   "status": "ok"
 }
