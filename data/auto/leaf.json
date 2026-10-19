@@ -4,37 +4,6 @@
     {
       "category": "tree-planting",
       "credit": "stated",
-      "end": "2026-10-18T15:00:00-04:00",
-      "evidence": [
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "credit",
-          "quote": "LEAF events count toward secondary school volunteer hour requirements"
-        }
-      ],
-      "id": "leaf:762df20cdbea54c9",
-      "location": "620 McBean Ave Newmarket , ON L3X 2L5",
-      "min_age": null,
-      "org": "LEAF",
-      "signup_required": true,
-      "source": "leaf",
-      "start": "2026-10-18T13:00:00-04:00",
-      "summary": null,
-      "summary_zh": null,
-      "title": "Community Tree Planting in Audrie Sanderson Park (Newmarket)",
-      "title_zh": "奥德丽·桑德森公园（纽马克特）社区植树活动",
-      "url": "https://www.yourleaf.org/event/oct-18-2026/community-tree-planting-audrie-sanderson-park-newmarket"
-    },
-    {
-      "category": "tree-planting",
-      "credit": "stated",
       "end": "2026-10-24T15:00:00-04:00",
       "evidence": [
         {
@@ -126,7 +95,7 @@
       "url": "https://www.yourleaf.org/event/nov-01-2026/community-tree-planting-conlin-meadows-park-oshawa"
     }
   ],
-  "fetched_at": "2026-10-18T23:48:28.174138+00:00",
+  "fetched_at": "2026-10-19T16:42:51.216137+00:00",
   "source": "leaf",
   "status": "ok"
 }
