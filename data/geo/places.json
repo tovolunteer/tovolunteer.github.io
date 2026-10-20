@@ -1,13 +1,46 @@
 {
+  "agincourt-community-services-association-food-bank": {
+    "checked": "2026-10-20",
+    "lat": null,
+    "lng": null,
+    "query": "1911 Kennedy Rd, Unit 109, Scarborough, ON M1P 2L9"
+  },
+  "albion-neighbourhood-services": {
+    "checked": "2026-10-20",
+    "lat": null,
+    "lng": null,
+    "query": "1530 Albion Road, Suite 205, Etobicoke, ON M9V 1B4"
+  },
+  "christie-ossington-neighbourhood-centre": {
+    "lat": 43.66249,
+    "lng": -79.4242,
+    "query": "850 Bloor St W, Toronto, ON M6G 1M2"
+  },
+  "community-share-food-bank": {
+    "lat": 43.7320684,
+    "lng": -79.3474059,
+    "query": "33 Overland Dr, North York, ON M3C 2C3"
+  },
   "daily-bread-food-bank": {
     "lat": 43.6064739,
     "lng": -79.5040796,
     "query": "191 New Toronto Street, Toronto, ON, M8V 2E7"
   },
+  "evangel-hall-mission": {
+    "lat": 43.6455608,
+    "lng": -79.4024795,
+    "query": "552 Adelaide St W, Toronto, ON M5V 3W8"
+  },
   "feed-scarborough": {
     "lat": 43.70356,
     "lng": -79.25267,
     "query": "2213 Kingston Rd, Toronto, ON, M1N 1T7"
+  },
+  "flemingdon-community-food-bank": {
+    "checked": "2026-10-20",
+    "lat": null,
+    "lng": null,
+    "query": "10 Gateway Blvd, Basement Unit 154, North York, ON M3C 3A1"
   },
   "foodshare-toronto": {
     "checked": "2026-10-20",
@@ -20,6 +53,32 @@
     "lng": -79.4050726,
     "query": "380 College St, Toronto, ON, M5T 1S6"
   },
+  "fred-victor": {
+    "lat": 43.6535226,
+    "lng": -79.372693,
+    "query": "145 Queen St E, Toronto, ON M5A 1S1"
+  },
+  "good-shepherd-ministries": {
+    "lat": 43.656175,
+    "lng": -79.3624789,
+    "query": "412 Queen St E, Toronto, ON M5A 1T3"
+  },
+  "haven-on-the-queensway": {
+    "lat": 43.6165741,
+    "lng": -79.5376814,
+    "query": "76 Fordhouse Boulevard, Etobicoke, ON M8Z 5X7"
+  },
+  "jane-finch-centre-food-support": {
+    "checked": "2026-10-20",
+    "lat": null,
+    "lng": null,
+    "query": "4400 Jane St, Suite 108, Toronto, ON M3N 2K4"
+  },
+  "lakeshore-area-multi-service-project": {
+    "lat": 43.60356,
+    "lng": -79.50343,
+    "query": "185 Fifth Street, Etobicoke, ON M8V 2Z5"
+  },
   "leaf:0d776f3f64dc0ab6": {
     "lat": 44.014781,
     "lng": -79.437185,
@@ -30,15 +89,40 @@
     "lng": -78.8671207,
     "query": "1091 Ormond Dr Oshawa, ON L1K 0E8"
   },
+  "native-womens-resource-centre-of-toronto": {
+    "lat": 43.660967,
+    "lng": -79.3725434,
+    "query": "191 Gerrard St E, Toronto, ON M5A 2E5"
+  },
+  "neighbourlink-north-york-food-hub": {
+    "lat": 43.77748,
+    "lng": -79.40492,
+    "query": "415 Willowdale Ave, North York, ON M2N 5B4"
+  },
   "north-york-harvest-food-bank": {
     "lat": 43.6938385,
     "lng": -79.4937089,
     "query": "116 Industry Street, Toronto, ON, M6M 4L8"
   },
+  "oasis-dufferin-community-centre": {
+    "lat": 43.666043,
+    "lng": -79.4378182,
+    "query": "1219 Dufferin St, Toronto, ON M6H 4C2"
+  },
   "parkdale-community-food-bank": {
     "lat": 43.6420043,
     "lng": -79.432415,
     "query": "5 Brock Avenue, Toronto, ON, M6K 2K6"
+  },
+  "rexdale-community-hub": {
+    "lat": 43.7463115,
+    "lng": -79.5815471,
+    "query": "21 Panorama Court, Etobicoke, ON M9V 4E3"
+  },
+  "scarborough-centre-for-healthy-communities": {
+    "lat": 43.767014,
+    "lng": -79.1954254,
+    "query": "4100 Lawrence Avenue East, Scarborough, ON M1E 2R9"
   },
   "second-harvest": {
     "lat": 43.6205933,
@@ -49,5 +133,20 @@
     "lat": 43.6708617,
     "lng": -79.4538219,
     "query": "1884 Davenport Road, Toronto, ON, M6H 4E1"
+  },
+  "the-scott-mission": {
+    "lat": 43.6586665,
+    "lng": -79.4007532,
+    "query": "502 Spadina Ave, Toronto, ON M5S 2H1"
+  },
+  "utsu-food-bank": {
+    "lat": 43.6586796,
+    "lng": -79.3981344,
+    "query": "230 College St, Toronto, ON M5T 1R2"
+  },
+  "weston-king-neighbourhood-centre": {
+    "lat": 43.7014488,
+    "lng": -79.5204612,
+    "query": "2017 Weston Rd, Toronto, ON M9N 1X2"
   }
 }

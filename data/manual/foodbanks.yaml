@@ -112,3 +112,303 @@
   sources:
   - https://feedscarborough.ca
   open_months: year-round
+- id: yonge-street-mission
+  name: Yonge Street Mission
+  area: Downtown
+  address: null
+  url: https://www.ysm.ca
+  find_food_url: null
+  volunteer_url: https://www.ysm.ca/get-involved/volunteer/short-term-volunteer/
+  volunteer_min_age: null
+  notes: Food bank visits require an appointment in advance for registered residents in the service area.
+  notes_zh: 服务区域内的注册居民需提前预约方可使用食物银行。
+  last_verified: '2026-10-20'
+  sources:
+  - https://www.ysm.ca
+  - https://www.ysm.ca/get-involved/volunteer/short-term-volunteer/
+  open_months: year-round
+- id: oasis-dufferin-community-centre
+  name: Oasis Dufferin Community Centre
+  area: West End
+  address: 1219 Dufferin St, Toronto, ON M6H 4C2
+  url: https://oasisdufferin.org
+  find_food_url: null
+  volunteer_url: null
+  volunteer_min_age: null
+  notes: Offers drop-in food bank services on Wednesday mornings and appointment-based access on Tuesday afternoons.
+  notes_zh: 周三上午提供免预约的食物银行服务，周二下午提供需提前预约的服务。
+  last_verified: '2026-10-20'
+  sources:
+  - https://oasisdufferin.org
+  open_months: year-round
+- id: christie-ossington-neighbourhood-centre
+  name: Christie Ossington Neighbourhood Centre
+  area: West End
+  address: 850 Bloor St W, Toronto, ON M6G 1M2
+  url: https://conccommunity.org
+  find_food_url: null
+  volunteer_url: https://conccommunity.org
+  volunteer_min_age: null
+  notes: Provides drop-in community meals and targeted food bank access for registered clients.
+  notes_zh: 为注册客户提供定点食物银行服务，并设有日常免预约社区餐食。
+  last_verified: '2026-10-20'
+  sources:
+  - https://conccommunity.org
+  open_months: year-round
+- id: weston-king-neighbourhood-centre
+  name: Weston King Neighbourhood Centre
+  area: York
+  address: 2017 Weston Rd, Toronto, ON M9N 1X2
+  url: https://wknc.ca
+  find_food_url: null
+  volunteer_url: null
+  volunteer_min_age: null
+  notes: Drop-in meal programs operate Monday through Saturday with food bank grocery giveaways on Tuesdays.
+  notes_zh: 周一至周六提供免预约餐食项目，周二发放食物银行食品杂货。
+  last_verified: '2026-10-20'
+  sources:
+  - https://wknc.ca
+  open_months: year-round
+- id: evangel-hall-mission
+  name: Evangel Hall Mission
+  area: Downtown
+  address: 552 Adelaide St W, Toronto, ON M5V 3W8
+  url: https://evangelhall.ca
+  find_food_url: null
+  volunteer_url: null
+  volunteer_min_age: null
+  notes: Operates drop-in meal services and food distribution Monday through Friday mornings with no appointment required.
+  notes_zh: 周一至周五上午提供免预约的餐食服务与食物发放。
+  last_verified: '2026-10-20'
+  sources:
+  - https://evangelhall.ca
+  open_months: year-round
+- id: flemingdon-community-food-bank
+  name: Flemingdon Community Food Bank
+  area: North York
+  address: 10 Gateway Blvd, Basement Unit 154, North York, ON M3C 3A1
+  url: https://www.fcfoodbank.com
+  find_food_url: https://www.fcfoodbank.com
+  volunteer_url: https://www.fcfoodbank.com
+  volunteer_min_age: null
+  notes: Open for in-person food distribution on Mondays and Wednesdays from 11:00 AM to 3:30 PM.
+  notes_zh: 周一和周三上午 11:00 至下午 3:30 开放现场食物发放。
+  last_verified: '2026-10-20'
+  sources:
+  - https://www.fcfoodbank.com
+  open_months: year-round
+- id: the-neighbourhood-organization-food-collaborative
+  name: The Neighbourhood Organization - The Food Collaborative
+  area: East York
+  address: null
+  url: https://tno-toronto.org
+  find_food_url: https://tno-toronto.org
+  volunteer_url: https://tno-toronto.org
+  volunteer_min_age: null
+  notes: Operates a grocery-style food market for eligible local residents by appointment.
+  notes_zh: 以超市模式为符合资格的本地居民提供食物市集服务，需提前预约。
+  last_verified: '2026-10-20'
+  sources:
+  - https://tno-toronto.org
+  open_months: year-round
+- id: jane-finch-centre-food-support
+  name: Jane/Finch Centre - Food Support Program
+  area: North York
+  address: 4400 Jane St, Suite 108, Toronto, ON M3N 2K4
+  url: https://www.janefinchcentre.org
+  find_food_url: https://foodsupport.ca
+  volunteer_url: https://www.janefinchcentre.org
+  volunteer_min_age: null
+  notes: Connects northwest Toronto residents to emergency food assistance and local food programs.
+  notes_zh: 为多伦多西北区居民提供紧急食物援助并对接本地食物项目。
+  last_verified: '2026-10-20'
+  sources:
+  - https://www.janefinchcentre.org
+  - https://foodsupport.ca
+  open_months: year-round
+- id: community-share-food-bank
+  name: Community Share Food Bank
+  area: North York
+  address: 33 Overland Dr, North York, ON M3C 2C3
+  url: https://www.communitysharefoodbank.ca
+  find_food_url: https://www.communitysharefoodbank.ca
+  volunteer_url: https://www.communitysharefoodbank.ca
+  volunteer_min_age: null
+  notes: Open for food distribution on Wednesdays from 11:00 AM to 3:00 PM by appointment.
+  notes_zh: 周三上午 11:00 至下午 3:00 开放食物发放，需预约。
+  last_verified: '2026-10-20'
+  sources:
+  - https://www.communitysharefoodbank.ca
+  open_months: year-round
+- id: neighbourlink-north-york-food-hub
+  name: NeighbourLink North York - 415 Food Hub
+  area: North York
+  address: 415 Willowdale Ave, North York, ON M2N 5B4
+  url: https://www.neighbourlink.org
+  find_food_url: https://www.neighbourlink.org
+  volunteer_url: https://www.neighbourlink.org/volunteer
+  volunteer_min_age: null
+  notes: Operates a community food hub providing food distribution to North York residents by appointment.
+  notes_zh: 运营社区食物枢纽，为北约克居民提供预约制食物发放服务。
+  last_verified: '2026-10-20'
+  sources:
+  - https://www.neighbourlink.org
+  - https://www.neighbourlink.org/volunteer
+  open_months: year-round
+- id: agincourt-community-services-association-food-bank
+  name: Agincourt Community Services Association - Food Centre
+  area: Scarborough
+  address: 1911 Kennedy Rd, Unit 109, Scarborough, ON M1P 2L9
+  url: https://www.agincourtcommunityservices.com
+  find_food_url: https://www.agincourtcommunityservices.com
+  volunteer_url: https://www.agincourtcommunityservices.com/volunteer
+  volunteer_min_age: null
+  notes: Operates a community food centre providing food assistance and supplies to local residents.
+  notes_zh: 运营社区食物中心，为当地居民提供食物援助与物资支持。
+  last_verified: '2026-10-20'
+  sources:
+  - https://www.agincourtcommunityservices.com
+  - https://www.agincourtcommunityservices.com/volunteer
+  open_months: year-round
+- id: scarborough-centre-for-healthy-communities
+  name: Scarborough Centre for Healthy Communities
+  area: Scarborough
+  address: 4100 Lawrence Avenue East, Scarborough, ON M1E 2R9
+  url: https://schcontario.ca
+  find_food_url: https://schcontario.ca
+  volunteer_url: https://schcontario.ca
+  volunteer_min_age: null
+  notes: Clients must book an appointment in advance by phone or email to access food bank services.
+  notes_zh: 客户需提前通过电话或电子邮件预约方可使用食物银行服务。
+  last_verified: '2026-10-20'
+  sources:
+  - https://schcontario.ca
+  open_months: year-round
+- id: lakeshore-area-multi-service-project
+  name: Lakeshore Area Multi-Service Project (LAMP) Community Health Centre
+  area: Etobicoke
+  address: 185 Fifth Street, Etobicoke, ON M8V 2Z5
+  url: https://lampchc.org
+  find_food_url: https://lampchc.org
+  volunteer_url: https://lampchc.org
+  volunteer_min_age: null
+  notes: Food security and adult drop-in community meal programs operate on a walk-in basis during designated program hours.
+  notes_zh: 食物保障及成人即插即入社区餐饮项目在指定时间段内按免预约方式开放。
+  last_verified: '2026-10-20'
+  sources:
+  - https://lampchc.org
+  open_months: year-round
+- id: haven-on-the-queensway
+  name: Haven on the Queensway
+  area: Etobicoke
+  address: 76 Fordhouse Boulevard, Etobicoke, ON M8Z 5X7
+  url: https://havenontheq.org
+  find_food_url: https://havenontheq.org
+  volunteer_url: https://havenontheq.org
+  volunteer_min_age: null
+  notes: Food bank operates strictly by appointment and pickup only with advance phone registration required.
+  notes_zh: 食物银行严格实行预约自取制，需提前通过电话登记。
+  last_verified: '2026-10-20'
+  sources:
+  - https://havenontheq.org
+  open_months: year-round
+- id: rexdale-community-hub
+  name: Rexdale Community Hub
+  area: Etobicoke
+  address: 21 Panorama Court, Etobicoke, ON M9V 4E3
+  url: https://rexdalehub.org
+  find_food_url: https://rexdalehub.org
+  volunteer_url: https://rexdalehub.org
+  volunteer_min_age: null
+  notes: Food access and community meal programs are provided on-site with registration required through partner programs.
+  notes_zh: 现场提供食物保障和社区餐饮项目，需通过合作项目提前登记。
+  last_verified: '2026-10-20'
+  sources:
+  - https://rexdalehub.org
+  open_months: year-round
+- id: albion-neighbourhood-services
+  name: Albion Neighbourhood Services
+  area: Etobicoke
+  address: 1530 Albion Road, Suite 205, Etobicoke, ON M9V 1B4
+  url: https://albionneighbourhoodservices.ca
+  find_food_url: https://albionneighbourhoodservices.ca
+  volunteer_url: https://albionneighbourhoodservices.ca
+  volunteer_min_age: null
+  notes: Community food distribution operates on set days by appointment only with prior registration required.
+  notes_zh: 社区食物发放于固定日期开放，仅限预约且需提前完成登记。
+  last_verified: '2026-10-20'
+  sources:
+  - https://albionneighbourhoodservices.ca
+  open_months: year-round
+- id: good-shepherd-ministries
+  name: Good Shepherd Ministries
+  area: Downtown East
+  address: 412 Queen St E, Toronto, ON M5A 1T3
+  url: https://goodshepherd.ca
+  find_food_url: null
+  volunteer_url: null
+  volunteer_min_age: null
+  notes: Daily free meal service is available on a drop-in basis with no appointment required.
+  notes_zh: 每日免费餐食采用直接到访的形式，无需预约。
+  last_verified: '2026-10-20'
+  sources:
+  - https://goodshepherd.ca
+  open_months: year-round
+- id: fred-victor
+  name: Fred Victor
+  area: Downtown East
+  address: 145 Queen St E, Toronto, ON M5A 1S1
+  url: https://fredvictor.org
+  find_food_url: null
+  volunteer_url: null
+  volunteer_min_age: null
+  notes: Community meals and drop-in services are offered without requiring an appointment.
+  notes_zh: 社区餐饮与日间服务直接向公众开放，无需预约。
+  last_verified: '2026-10-20'
+  sources:
+  - https://fredvictor.org
+  open_months: year-round
+- id: the-scott-mission
+  name: The Scott Mission
+  area: Downtown
+  address: 502 Spadina Ave, Toronto, ON M5S 2H1
+  url: https://scottmission.com
+  find_food_url: null
+  volunteer_url: https://scottmission.com/volunteer/volunteer-opportunities/
+  volunteer_min_age: null
+  notes: Hot meals are provided on a drop-in basis, while access to the grocery food bank requires prior registration.
+  notes_zh: 热餐服务可直接到访享用，食品银行物资领取需预先登记。
+  last_verified: '2026-10-20'
+  sources:
+  - https://scottmission.com
+  - https://scottmission.com/volunteer/volunteer-opportunities/
+  open_months: year-round
+- id: utsu-food-bank
+  name: University of Toronto Students' Union Food Bank
+  area: Downtown
+  address: 230 College St, Toronto, ON M5T 1R2
+  url: https://www.utsu.ca
+  find_food_url: https://www.utsu.ca/food-bank/
+  volunteer_url: https://www.utsu.ca/work-volunteer
+  volunteer_min_age: null
+  notes: Food bank visits for students require booking an appointment in advance.
+  notes_zh: 面向学生的食品银行服务需提前预约。
+  last_verified: '2026-10-20'
+  sources:
+  - https://www.utsu.ca/food-bank/
+  - https://www.utsu.ca/work-volunteer
+  open_months: year-round
+- id: native-womens-resource-centre-of-toronto
+  name: Native Women's Resource Centre of Toronto
+  area: Downtown East
+  address: 191 Gerrard St E, Toronto, ON M5A 2E5
+  url: https://nwrct.ca/
+  find_food_url: null
+  volunteer_url: null
+  volunteer_min_age: null
+  notes: Drop-in lunch meals are open to all women, while the emergency food bank serves Indigenous women and their families.
+  notes_zh: 免费午餐直接面向所有女性开放，应急食品银行服务于原住民女性及其家庭。
+  last_verified: '2026-10-20'
+  sources:
+  - https://nwrct.ca/
+  open_months: year-round
