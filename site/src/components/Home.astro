@@ -43,7 +43,7 @@ const category = (value) => t.categories[value] || t.categories.other;
   {hasAutoEvents && <section class="content-section automatic-section" aria-labelledby="automatic-heading">
     <div class="section-heading">
       <h2 id="automatic-heading">{t.autoTitle}</h2>
-      <p>{t.autoIntro}</p>
+      <p>{t.autoIntro} {t.lastChecked} {fullDate(new Date().toISOString())}</p>
     </div>
     <div class="filters" data-event-filters role="group" aria-label={t.filters}>
       <label>{t.category}
@@ -75,7 +75,6 @@ const category = (value) => t.categories[value] || t.categories.other;
             <div class="minor"><dt>{t.registration}</dt><dd>{signup(event.signup_required)}</dd></div>
             <div class="minor"><dt>{t.credit}</dt><dd>{event.credit === 'stated' ? t.creditStated : t.creditNotStated}</dd></div>
             <div class="minor"><dt>{t.source}</dt><dd>{event.source}</dd></div>
-            <div class="minor"><dt>{t.fetched}</dt><dd>{fullDate(event.fetched_at)}</dd></div>
           </dl>
           {(t.lang === 'zh' ? event.summary_zh || event.summary : event.summary) &&
             <p class="muted">{t.lang === 'zh' ? event.summary_zh || event.summary : event.summary}</p>}

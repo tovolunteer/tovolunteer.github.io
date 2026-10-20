@@ -12,6 +12,7 @@ export const zh = {
   about: '关于',
   switchLanguage: 'EN',
   autoTitle: '近期活动 · 说走就走',
+  lastChecked: '最后检查：',
   autoIntro: '最近可以直接参加的活动，每天自动更新两次。',
   manualTitle: '长期项目 · 提前规划',
   manualIntro: '长期志愿项目，需要提前了解要求并报名。',

@@ -12,6 +12,7 @@ export const en = {
   about: 'About',
   switchLanguage: '中文',
   autoTitle: 'Happening Soon',
+  lastChecked: 'Last checked:',
   autoIntro: 'Upcoming events you can jump into — refreshed twice a day.',
   manualTitle: 'Plan Ahead',
   manualIntro: 'Ongoing programs — check requirements and sign up in advance.',
