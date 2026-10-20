@@ -27,7 +27,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
       - run: uv sync --frozen --no-dev
-      - run: uv run playwright install --with-deps chromium
       - id: run
         run: |
           set +e
