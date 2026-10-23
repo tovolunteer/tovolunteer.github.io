@@ -39,6 +39,14 @@
     },
     "signup_required": true
   },
+  "6f575b4a4c8bd1d45f68fe51911c8eaca28ec50a4e7f319868e8ebf4be34a9c0": {
+    "credit": "not-stated",
+    "min_age": null,
+    "quotes": {
+      "signup_required": "Register for the Event Here!"
+    },
+    "signup_required": true
+  },
   "922f67d87f00c8bd232bda25567ab5f6ab06efe78862415f3b02d749d087234f": "康林草甸公园（奥沙瓦）社区植树活动",
   "a6c05747d73932cb08b985245084f60cd66db011d8a9ee3d0ae9e0ec6bdafa79": {
     "credit": "stated",
@@ -68,5 +76,6 @@
     },
     "signup_required": true
   },
-  "e0b5e242f7faa74bf62b73047fed9c854aeb639b3b0b895f4fddeb1916fc6023": "珍宝山公园（乔治娜）社区植树活动"
+  "e0b5e242f7faa74bf62b73047fed9c854aeb639b3b0b895f4fddeb1916fc6023": "珍宝山公园（乔治娜）社区植树活动",
+  "e328e304d18bec776dc9ef19f3ed2d5f3f369c15b19cd1dc59c436e012e70619": "希尔戴尔北公园原生乔灌木种植"
 }
