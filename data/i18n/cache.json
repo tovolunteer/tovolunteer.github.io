@@ -39,6 +39,7 @@
     },
     "signup_required": true
   },
+  "6ce28e3e2db4e6d71bffccdafe5d9c7559ab138aca258aac9c5ac71032c10b13": "TD“树木日”Indian Line露营地植树活动 – 活动 B",
   "6f575b4a4c8bd1d45f68fe51911c8eaca28ec50a4e7f319868e8ebf4be34a9c0": {
     "credit": "not-stated",
     "min_age": null,
@@ -48,6 +49,15 @@
     "signup_required": true
   },
   "922f67d87f00c8bd232bda25567ab5f6ab06efe78862415f3b02d749d087234f": "康林草甸公园（奥沙瓦）社区植树活动",
+  "a26cd822ede076d801422ed74d6ad60487f961faca44620eed695bb230a705e5": {
+    "credit": "stated",
+    "min_age": null,
+    "quotes": {
+      "credit": "Minors who wish to count this activity as volunteer hours are required to bring their official volunteer form for the TD Site Leader to complete and sign.",
+      "signup_required": "To register for this event please visit the following URL:"
+    },
+    "signup_required": true
+  },
   "a6c05747d73932cb08b985245084f60cd66db011d8a9ee3d0ae9e0ec6bdafa79": {
     "credit": "stated",
     "min_age": null,

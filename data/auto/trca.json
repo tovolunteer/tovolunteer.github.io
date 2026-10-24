@@ -1,7 +1,35 @@
 {
   "error": null,
-  "events": [],
-  "fetched_at": "2026-10-24T13:43:27.791429+00:00",
+  "events": [
+    {
+      "category": "tree-planting",
+      "credit": "stated",
+      "end": "2026-10-31T12:00:00-04:00",
+      "evidence": [
+        {
+          "field": "signup_required",
+          "quote": "To register for this event please visit the following URL:"
+        },
+        {
+          "field": "credit",
+          "quote": "Minors who wish to count this activity as volunteer hours are required to bring their official volunteer form for the TD Site Leader to complete and sign."
+        }
+      ],
+      "id": "trca:0dba046da821f7c1",
+      "location": "7625 Finch Ave W, Toronto, ON, L6T 0B2",
+      "min_age": null,
+      "org": "Toronto and Region Conservation Authority",
+      "signup_required": true,
+      "source": "trca",
+      "start": "2026-10-31T10:00:00-04:00",
+      "summary": null,
+      "summary_zh": null,
+      "title": "TD Tree Days Planting at Indian Line Campground – Event B",
+      "title_zh": "TD“树木日”Indian Line露营地植树活动 – 活动 B",
+      "url": "https://calendar.trca.ca/event/td-tree-days-planting-at-indian-line-event-b/"
+    }
+  ],
+  "fetched_at": "2026-10-24T23:52:02.726562+00:00",
   "source": "trca",
-  "status": "empty"
+  "status": "ok"
 }
