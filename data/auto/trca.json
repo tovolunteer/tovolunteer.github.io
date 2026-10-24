@@ -1,31 +1,7 @@
 {
   "error": null,
-  "events": [
-    {
-      "category": "tree-planting",
-      "credit": "not-stated",
-      "end": "2026-10-24T12:00:00-04:00",
-      "evidence": [
-        {
-          "field": "signup_required",
-          "quote": "Register for the Event Here!"
-        }
-      ],
-      "id": "trca:4745839f7f2216bd",
-      "location": "Hilldale Park North, Chinguacousy Trail, Brampton, ON L6S 1X9",
-      "min_age": null,
-      "org": "Toronto and Region Conservation Authority",
-      "signup_required": true,
-      "source": "trca",
-      "start": "2026-10-24T10:00:00-04:00",
-      "summary": null,
-      "summary_zh": null,
-      "title": "Native Tree and Shrub Planting at Hilldale Park North",
-      "title_zh": "希尔戴尔北公园原生乔灌木种植",
-      "url": "https://calendar.trca.ca/event/native-tree-and-shrub-planting/"
-    }
-  ],
-  "fetched_at": "2026-10-24T00:08:39.344370+00:00",
+  "events": [],
+  "fetched_at": "2026-10-24T13:43:27.791429+00:00",
   "source": "trca",
-  "status": "ok"
+  "status": "empty"
 }
