@@ -4,37 +4,6 @@
     {
       "category": "tree-planting",
       "credit": "stated",
-      "end": "2026-10-24T15:00:00-04:00",
-      "evidence": [
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "credit",
-          "quote": "LEAF events count toward secondary school volunteer hour requirements"
-        }
-      ],
-      "id": "leaf:32248bffb1e39c10",
-      "location": null,
-      "min_age": null,
-      "org": "LEAF",
-      "signup_required": true,
-      "source": "leaf",
-      "start": "2026-10-24T13:00:00-04:00",
-      "summary": null,
-      "summary_zh": null,
-      "title": "Community Tree Planting Event in Treasure Hill Park (Georgina)",
-      "title_zh": "珍宝山公园（乔治娜）社区植树活动",
-      "url": "https://www.yourleaf.org/event/oct-24-2026/community-tree-planting-event-treasure-hill-park-georgina"
-    },
-    {
-      "category": "tree-planting",
-      "credit": "stated",
       "end": "2026-10-31T15:00:00-04:00",
       "evidence": [
         {
@@ -95,7 +64,7 @@
       "url": "https://www.yourleaf.org/event/nov-01-2026/community-tree-planting-conlin-meadows-park-oshawa"
     }
   ],
-  "fetched_at": "2026-10-24T23:52:05.192490+00:00",
+  "fetched_at": "2026-10-25T14:00:45.827321+00:00",
   "source": "leaf",
   "status": "ok"
 }
