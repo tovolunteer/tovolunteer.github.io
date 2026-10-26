@@ -1,5 +1,14 @@
 {
   "17e5b4f23ab051b05f047486737e55ba54520b21a41b34ef621b686836742ba5": "Downsview公园社区种植活动",
+  "1f13d959bdc2e50992a85e44a3536c4a7235d032c3d48a2091b77f9066bc6bbd": {
+    "credit": "stated",
+    "min_age": null,
+    "quotes": {
+      "credit": "LEAF events count toward secondary school volunteer hour requirements.",
+      "signup_required": "REGISTRATION REQUIRED"
+    },
+    "signup_required": true
+  },
   "2cb491d41d472205f54aae2f2c0e693a960a7da4b5b9fb0695f7ae92d246ba00": {
     "credit": "stated",
     "min_age": 14,
@@ -36,6 +45,15 @@
     "min_age": null,
     "quotes": {
       "signup_required": "To register for this event please visit the following URL:"
+    },
+    "signup_required": true
+  },
+  "64cd40bd37e70ebf84d24e02fe20dfe9ef235d01cc6f1d978bdc7dea69e9cafa": {
+    "credit": "stated",
+    "min_age": null,
+    "quotes": {
+      "credit": "LEAF events count toward secondary school volunteer hour requirements.",
+      "signup_required": "Registration Required"
     },
     "signup_required": true
   },
