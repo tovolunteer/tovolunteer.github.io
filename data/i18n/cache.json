@@ -66,6 +66,14 @@
     },
     "signup_required": true
   },
+  "83ca7c92a84bf76bc4f14921a05007924e01ab4a464acc7af03107dcce2e2298": {
+    "credit": "not-stated",
+    "min_age": null,
+    "quotes": {
+      "signup_required": "To register for this event please visit the following URL"
+    },
+    "signup_required": true
+  },
   "922f67d87f00c8bd232bda25567ab5f6ab06efe78862415f3b02d749d087234f": "康林草甸公园（奥沙瓦）社区植树活动",
   "a26cd822ede076d801422ed74d6ad60487f961faca44620eed695bb230a705e5": {
     "credit": "stated",

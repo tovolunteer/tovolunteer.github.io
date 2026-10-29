@@ -27,9 +27,36 @@
       "title": "TD Tree Days Planting at Indian Line Campground – Event B",
       "title_zh": "TD“树木日”Indian Line露营地植树活动 – 活动 B",
       "url": "https://calendar.trca.ca/event/td-tree-days-planting-at-indian-line-event-b/"
+    },
+    {
+      "category": "tree-planting",
+      "credit": "not-stated",
+      "end": "2026-11-08T14:30:00-05:00",
+      "evidence": [
+        {
+          "field": "min_age",
+          "quote": "at least 7 "
+        },
+        {
+          "field": "signup_required",
+          "quote": "To register for this event please visit the following URL"
+        }
+      ],
+      "id": "trca:423a632374c9a1a0",
+      "location": "70 Canuck Avenue Toronto, ON M3M 2H3",
+      "min_age": 7,
+      "org": "Toronto and Region Conservation Authority",
+      "signup_required": true,
+      "source": "trca",
+      "start": "2026-11-08T13:00:00-05:00",
+      "summary": null,
+      "summary_zh": null,
+      "title": "Downsview Park Community Planting",
+      "title_zh": "Downsview公园社区种植活动",
+      "url": "https://calendar.trca.ca/event/downsview-park-community-planting/"
     }
   ],
-  "fetched_at": "2026-10-28T16:21:47.217230+00:00",
+  "fetched_at": "2026-10-29T01:24:02.145102+00:00",
   "source": "trca",
   "status": "ok"
 }
