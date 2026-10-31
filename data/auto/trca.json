@@ -3,33 +3,6 @@
   "events": [
     {
       "category": "tree-planting",
-      "credit": "stated",
-      "end": "2026-10-31T12:00:00-04:00",
-      "evidence": [
-        {
-          "field": "signup_required",
-          "quote": "To register for this event please visit the following URL:"
-        },
-        {
-          "field": "credit",
-          "quote": "Minors who wish to count this activity as volunteer hours are required to bring their official volunteer form for the TD Site Leader to complete and sign."
-        }
-      ],
-      "id": "trca:0dba046da821f7c1",
-      "location": "7625 Finch Ave W, Toronto, ON, L6T 0B2",
-      "min_age": null,
-      "org": "Toronto and Region Conservation Authority",
-      "signup_required": true,
-      "source": "trca",
-      "start": "2026-10-31T10:00:00-04:00",
-      "summary": null,
-      "summary_zh": null,
-      "title": "TD Tree Days Planting at Indian Line Campground – Event B",
-      "title_zh": "TD“树木日”Indian Line露营地植树活动 – 活动 B",
-      "url": "https://calendar.trca.ca/event/td-tree-days-planting-at-indian-line-event-b/"
-    },
-    {
-      "category": "tree-planting",
       "credit": "not-stated",
       "end": "2026-11-08T14:30:00-05:00",
       "evidence": [
@@ -56,7 +29,7 @@
       "url": "https://calendar.trca.ca/event/downsview-park-community-planting/"
     }
   ],
-  "fetched_at": "2026-10-31T01:14:24.287372+00:00",
+  "fetched_at": "2026-10-31T15:32:49.055799+00:00",
   "source": "trca",
   "status": "ok"
 }
