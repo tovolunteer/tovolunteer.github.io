@@ -12,7 +12,7 @@
         },
         {
           "field": "signup_required",
-          "quote": "To register for this event please visit the following URL"
+          "quote": "To register for this event please visit the following URL:"
         }
       ],
       "id": "trca:423a632374c9a1a0",
@@ -29,7 +29,7 @@
       "url": "https://calendar.trca.ca/event/downsview-park-community-planting/"
     }
   ],
-  "fetched_at": "2026-11-01T00:32:54.184084+00:00",
+  "fetched_at": "2026-11-01T16:30:27.745416+00:00",
   "source": "trca",
   "status": "ok"
 }

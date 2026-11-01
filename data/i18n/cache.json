@@ -66,6 +66,14 @@
     },
     "signup_required": true
   },
+  "7160414858ba3872765bc838905149558d3fabb30e739e722b7c6d5bb794f804": {
+    "credit": "not-stated",
+    "min_age": null,
+    "quotes": {
+      "signup_required": "To register for this event please visit the following URL:"
+    },
+    "signup_required": true
+  },
   "83ca7c92a84bf76bc4f14921a05007924e01ab4a464acc7af03107dcce2e2298": {
     "credit": "not-stated",
     "min_age": null,
