@@ -1,70 +1,7 @@
 {
   "error": null,
-  "events": [
-    {
-      "category": "tree-planting",
-      "credit": "stated",
-      "end": "2026-10-31T15:00:00-04:00",
-      "evidence": [
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "credit",
-          "quote": "LEAF events count toward secondary school volunteer hour requirements"
-        }
-      ],
-      "id": "leaf:0d776f3f64dc0ab6",
-      "location": "234 Mavrinac Blvd Aurora , ON L4G 0E6",
-      "min_age": null,
-      "org": "LEAF",
-      "signup_required": true,
-      "source": "leaf",
-      "start": "2026-10-31T13:00:00-04:00",
-      "summary": null,
-      "summary_zh": null,
-      "title": "Community Tree Planting in Thomas Coates Park (Aurora)",
-      "title_zh": "托马斯·科茨公园（奥罗拉）社区植树活动",
-      "url": "https://www.yourleaf.org/event/oct-31-2026/community-tree-planting-thomas-coates-park-aurora"
-    },
-    {
-      "category": "tree-planting",
-      "credit": "stated",
-      "end": "2026-11-01T15:00:00-05:00",
-      "evidence": [
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "credit",
-          "quote": "LEAF events count toward secondary school volunteer hour requirements"
-        }
-      ],
-      "id": "leaf:78c94c69fe9feb45",
-      "location": "1091 Ormond Dr Oshawa , ON L1K 0E8",
-      "min_age": null,
-      "org": "LEAF",
-      "signup_required": true,
-      "source": "leaf",
-      "start": "2026-11-01T13:00:00-05:00",
-      "summary": null,
-      "summary_zh": null,
-      "title": "Community Tree Planting in Conlin Meadows Park (Oshawa)",
-      "title_zh": "康林草甸公园（奥沙瓦）社区植树活动",
-      "url": "https://www.yourleaf.org/event/nov-01-2026/community-tree-planting-conlin-meadows-park-oshawa"
-    }
-  ],
-  "fetched_at": "2026-10-31T15:32:50.988131+00:00",
+  "events": [],
+  "fetched_at": "2026-11-01T00:32:56.246128+00:00",
   "source": "leaf",
-  "status": "ok"
+  "status": "empty"
 }
