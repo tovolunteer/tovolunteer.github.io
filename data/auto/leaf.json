@@ -1,39 +1,7 @@
 {
   "error": null,
-  "events": [
-    {
-      "category": "tree-planting",
-      "credit": "stated",
-      "end": "2026-11-01T15:00:00-05:00",
-      "evidence": [
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "signup_required",
-          "quote": "Registration Required"
-        },
-        {
-          "field": "credit",
-          "quote": "LEAF events count toward secondary school volunteer hour requirements"
-        }
-      ],
-      "id": "leaf:78c94c69fe9feb45",
-      "location": "1091 Ormond Dr Oshawa , ON L1K 0E8",
-      "min_age": null,
-      "org": "LEAF",
-      "signup_required": true,
-      "source": "leaf",
-      "start": "2026-11-01T13:00:00-05:00",
-      "summary": null,
-      "summary_zh": null,
-      "title": "Community Tree Planting in Conlin Meadows Park (Oshawa)",
-      "title_zh": "康林草甸公园（奥沙瓦）社区植树活动",
-      "url": "https://www.yourleaf.org/event/nov-01-2026/community-tree-planting-conlin-meadows-park-oshawa"
-    }
-  ],
-  "fetched_at": "2026-11-02T01:07:37.298440+00:00",
+  "events": [],
+  "fetched_at": "2026-11-02T19:53:37.527011+00:00",
   "source": "leaf",
-  "status": "ok"
+  "status": "empty"
 }
